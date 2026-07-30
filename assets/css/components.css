@@ -187,7 +187,8 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
 .project-card:nth-child(1) { grid-column: span 12; min-height: min(68vw, 780px); }
 .project-card:nth-child(2) { grid-column: span 7; }
 .project-card:nth-child(3) { grid-column: span 5; }
-.project-card:nth-child(4) { grid-column: span 12; min-height: 620px; }
+.project-card:nth-child(4) { grid-column: span 5; }
+.project-card:nth-child(5) { grid-column: span 7; }
 
 .project-card-image {
   position: absolute;

@@ -19,11 +19,26 @@ export async function loadPortfolioData() {
     throw new TypeError("data/projects.json must contain an array of projects.");
   }
 
+  const publishedProjects = projects.filter(
+    project => project.published !== false
+  );
+
+  const orderedProjects = [...publishedProjects].sort(
+    (a, b) => (b.priority ?? 0) - (a.priority ?? 0)
+  );
+
+  const featuredProjects = publishedProjects
+    .filter(project => project.featured === true)
+    .sort(
+      (a, b) =>
+        (b.featuredPriority ?? b.priority ?? 0) -
+        (a.featuredPriority ?? a.priority ?? 0)
+    );
+
   return {
     site,
-    projects: projects
-      .filter(project => project.published !== false)
-      .sort((a, b) => (b.priority ?? 0) - (a.priority ?? 0))
+    projects: orderedProjects,
+    featuredProjects
   };
 }
 

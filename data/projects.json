@@ -3,6 +3,7 @@
     "id": "apartmani-lzt",
     "published": true,
     "priority": 80,
+    "featuredPriority": 100,
     "featured": true,
     "type": "website",
     "liveUrl": "https://apartmani-lzt.com",
@@ -195,6 +196,8 @@
     "id": "knjiga-hrv-zena",
     "published": true,
     "priority": 75,
+    "featuredPriority": 80,
+
     "featured": true,
     "accent": "#b0ac59",
     "accentTheme": "dark",
@@ -292,7 +295,8 @@
   {
     "id": "fti-consulting",
     "published": true,
-    "priority": 70,
+    "priority": 76,
+    "featuredPriority": 90,
     "featured": true,
     "type": "website",
     "liveUrl": "https://fticonsult.com/",
@@ -478,14 +482,15 @@
     "related": [
       "gimn-klub",
       "knjiga-hrv-zena",
-      "social-campaign"
+      "hotel-vitar"
     ]
   },
   {
     "id": "zinf",
     "published": true,
     "priority": 30,
-    "featured": true,
+    "featuredPriority": 60,
+    "featured": false,
     "accent": "#bd4763",
     "accentTheme": "dark",
     "title": {
@@ -606,29 +611,30 @@
     ]
   },
   {
-    "id": "social-campaign",
+    "id": "hotel-vitar",
     "published": true,
     "priority": 20,
-    "featured": false,
-    "accent": "#be6282",
+    "featuredPriority": 70,
+    "featured": true,
+    "accent": "#6a8fae",
     "accentTheme": "dark",
     "title": {
-      "en": "Social Campaign",
-      "hr": "Kampanja za društvene mreže"
+      "en": "Hotel Vitar",
+      "hr": "Hotel Vitar"
     },
     "categories": ["social"],
     "year": 2025,
     "intro": {
-      "en": "A flexible campaign designed for repeatable, recognizable communication.",
-      "hr": "Fleksibilna kampanja za ponovljivu i prepoznatljivu komunikaciju."
+      "en": "Hotel company car livery design.",
+      "hr": "Dizajn reklamne folije za automobil."
     },
     "summary": {
-      "en": "A modular campaign system.",
-      "hr": "Modularni sustav kampanje."
+      "en": "",
+      "hr": ""
     },
     "client": {
-      "en": "Campaign Client",
-      "hr": "Klijent kampanje"
+      "en": "Hotel Vitar",
+      "hr": "Hotel Vitar"
     },
     "role": {
       "en": "Campaign design",
@@ -654,14 +660,14 @@
     },
     "images": {
       "thumbnail": {
-        "src": "assets/images/placeholders/social.svg",
+        "src": "assets/images/projects/hotel-vitar/thumbnail.webp",
         "alt": {
           "en": "Placeholder for a social media campaign",
           "hr": "Rezervirano mjesto za kampanju na društvenim mrežama"
         }
       },
       "hero": {
-        "src": "assets/images/placeholders/social.svg",
+        "src": "assets/images/projects/hotel-vitar/hero.webp",
         "alt": {
           "en": "Placeholder for a social media campaign",
           "hr": "Rezervirano mjesto za kampanju na društvenim mrežama"
@@ -670,7 +676,23 @@
       "social": "assets/images/placeholders/social.svg",
       "gallery": [
         {
-          "src": "assets/images/placeholders/social.svg",
+          "src": "assets/images/projects/hotel-vitar/web1.webp",
+          "alt": {
+            "en": "Campaign assets",
+            "hr": "Materijali kampanje"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/hotel-vitar/web2.webp",
+          "alt": {
+            "en": "Campaign assets",
+            "hr": "Materijali kampanje"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/hotel-vitar/web3.webp",
           "alt": {
             "en": "Campaign assets",
             "hr": "Materijali kampanje"
@@ -762,7 +784,7 @@
     "related": [
       "zinf",
       "knjiga-hrv-zena",
-      "social-campaign"
+      "hotel-vitar"
     ]
   }
 ]

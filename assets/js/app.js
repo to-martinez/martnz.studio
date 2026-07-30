@@ -121,6 +121,7 @@ const translations = {
 
 let site;
 let projects = [];
+let featuredProjects = [];
 let observer;
 
 const t = key => translations[state.language][key] ?? key;
@@ -359,8 +360,17 @@ function createWorkCard(project) {
 function renderProjects() {
   const featuredGrid = document.querySelector("[data-featured-grid]");
   const projectGrid = document.querySelector("[data-project-grid]");
-  featuredGrid.replaceChildren(...projects.filter(project => project.featured).slice(0, 4).map(createFeaturedCard));
-  projectGrid.replaceChildren(...projects.map(createWorkCard));
+
+  featuredGrid.replaceChildren(
+    ...featuredProjects
+      .slice(0, 5)
+      .map(createFeaturedCard)
+  );
+
+  projectGrid.replaceChildren(
+    ...projects.map(createWorkCard)
+  );
+
   observeReveals();
 }
 
@@ -517,7 +527,7 @@ function showError(error) {
 }
 
 async function init() {
-  ({ site, projects } = await loadPortfolioData());
+  ({ site, projects, featuredProjects } = await loadPortfolioData());
   document.querySelector("[data-current-year]").textContent = new Date().getFullYear();
   applyTheme();
   setupHeader();
