@@ -6,17 +6,13 @@
     "featured": true,
     "type": "website",
     "liveUrl": "https://apartmani-lzt.com",
-    "accent": "#ff588e",
+    "accent": "#48d370",
     "accentTheme": "dark",
     "title": {
       "en": "Apartmani-LZT.com",
       "hr": "Apartmani-LZT.com"
     },
-    "category": "web", 
-    "categoryLabel": {
-      "en": "Web Design",
-      "hr": "Web dizajn"
-    },
+    "categories": ["web"],
     "year": 2025,
     "intro": {
       "en": "A responsive website built around clarity, speed and uniqueness.",
@@ -38,12 +34,14 @@
       "en": [
         "UX/UI Design",
         "Front-end Development",
-        "Responsive Design"
+        "Responsive Design",
+        "Photography"
       ],
       "hr": [
         "UX/UI dizajn",
         "Front-end razvoj",
-        "Responzivni dizajn"
+        "Responzivni dizajn",
+        "Fotografija"
       ]
     },
     "problem": {
@@ -91,130 +89,22 @@
     },
     "related": [
       "fti-consulting",
-      "digital-experience",
+      "zinf",
       "interface-concept"
-    ]
-  },
-  {
-    "id": "fti-consulting",
-    "published": true,
-    "priority": 70,
-    "featured": true,
-    "type": "website",
-    "liveUrl": "https://fticonsult.com/",
-    "accent": "#a8c2f7",
-    "accentTheme": "dark",
-    "title": {
-      "en": "FTIConsult.com",
-      "hr": "FTIConsult.com"
-    },
-    "category": "web",
-    "categoryLabel": {
-      "en": "Web Design",
-      "hr": "Web dizajn"
-    },
-    "year": 2025,
-    "intro": {
-      "en": "A focused client website designed to feel simple and confident yet creative and visually stunning.",
-      "hr": "Usmjerena web stranica oblikovano da djeluje jednostavno i samouvjereno, a opet kreativno i vizualno zapanjujuće."
-    },
-    "summary": {
-      "en": "A creative web experience combining a calm visual system with simple yet intriguing navigation.",
-      "hr": "Kreativno web iskustvo koje kombinira miran vizualni sustav s jednostavnom, a opet intrigantnom navigacijom."
-    },
-    "client": {
-      "en": "FTI Consulting",
-      "hr": "FTI Consulting"
-    },
-    "role": {
-      "en": "UX/UI design and website development",
-      "hr": "UX/UI dizajn i razvoj web stranice"
-    },
-    "services": {
-      "en": [
-        "Information Architecture",
-        "UI Design",
-        "Responsive Development"
-      ],
-      "hr": [
-        "Informacijska arhitektura",
-        "UI dizajn",
-        "Responzivni razvoj"
-      ]
-    },
-    "problem": {
-      "en": "To create a website that outlines the clients services and expertise in a clear, confident and visually appealing way.",
-      "hr": "Izrada web stranice koja jasno, samouvjereno i vizualno privlačno predstavlja usluge i stručnost klijenta."
-    },
-    "solution": {
-      "en": "A minimalist yet creative web solution that uses a calm visual system, simple navigation and responsive design to present the clients services and expertise in a unique manner.",
-      "hr": "Minimalistično, a opet kreativno rješenje web stranice koje koristi miran vizualni sustav, jednostavnu navigaciju i responzivni dizajn za jedinstveno predstavljanje usluga i stručnosti klijenta."
-    },
-    "images": {
-      "thumbnail": {
-        "src": "assets/images/projects/fti-consulting/thumbnail.webp",
-        "alt": {
-          "en": "Placeholder for website project two",
-          "hr": "Rezervirano mjesto za drugi web projekt"
-        }
-      },
-      "hero": {
-        "src": "assets/images/projects/fti-consulting/hero.webp",
-        "alt": {
-          "en": "Website interface presentation placeholder",
-          "hr": "Rezervirano mjesto za prezentaciju sučelja web stranice"
-        }
-      },
-      "social": "assets/images/projects/fti-consulting/social.webp",
-      "gallery": [
-        {
-          "src": "assets/images/projects/fti-consulting/web1.webp",
-          "alt": {
-            "en": "Website homepage and interface",
-            "hr": "Naslovnica i sučelje web stranice"
-          },
-          "size": "wide"
-        },
-        {
-          "src": "assets/images/projects/fti-consulting/web2.webp",
-          "alt": {
-            "en": "Desktop website section",
-            "hr": "Dio web stranice na računalu"
-          },
-          "size": "half"
-        },
-        {
-          "src": "assets/images/projects/fti-consulting/web3.webp",
-          "alt": {
-            "en": "Responsive website detail",
-            "hr": "Detalj responzivne web stranice"
-          },
-          "size": "half"
-        }
-      ]
-    },
-    "related": [
-      "apartmani-lzt",
-      "interface-concept",
-      "digital-experience"
     ]
   },
   {
     "id": "gimn-klub",
     "published": true,
     "priority": 60,
-    "featured": true,
+    "featured": false,
     "accent": "#84bcf5",
     "accentTheme": "dark",
     "title": {
       "en": "Gimnastic club",
       "hr": "Gimnastički klub"
     },
-    "category": "branding",
-    "categoryLabel": {
-      "en": "Branding / Logos",
-      "hr": "Brending / Logotipi"
-    },
+    "categories": ["branding"],
     "year": 2026,
     "intro": {
       "en": "A concept for both a symbol and a logo designed to stay recognizable across very different formats.",
@@ -297,26 +187,22 @@
     },
     "related": [
       "knjiga-hrv-zena",
-      "packaging-concept",
-      "digital-experience"
+      "grill-cheese",
+      "zinf"
     ]
   },
   {
     "id": "knjiga-hrv-zena",
     "published": true,
-    "priority": 50,
+    "priority": 75,
     "featured": true,
     "accent": "#b0ac59",
     "accentTheme": "dark",
     "title": {
-      "en": "Book project",
-      "hr": "Knjiga projekt"
+      "en": "Book - Monograph",
+      "hr": "Knjiga - Monografija"
     },
-    "category": "print",
-    "categoryLabel": {
-      "en": "Print",
-      "hr": "Tisak"
-    },
+    "categories": ["print"],
     "year": 2025,
     "intro": {
       "en": "A calm editorial structure for dense, information and picture-rich content.",
@@ -331,8 +217,8 @@
       "hr": "Udruga 'Hrvatska žena' Krapina"
     },
     "role": {
-      "en": "Editorial design and layout, at F.I.L.-ART",
-      "hr": "Urednički dizajn i prijelom, u F.I.L.-ART-u"
+      "en": "Editorial design and layout, @ F.I.L.-ART",
+      "hr": "Urednički dizajn i prijelom, @ F.I.L.-ART"
     },
     "services": {
       "en": [
@@ -399,42 +285,140 @@
     },
     "related": [
       "gimn-klub",
-      "digital-experience",
-      "packaging-concept"
+      "zinf",
+      "grill-cheese"
     ]
   },
   {
-    "id": "packaging-concept",
+    "id": "fti-consulting",
     "published": true,
-    "priority": 40,
+    "priority": 70,
     "featured": true,
-    "accent": "#4f8f80",
+    "type": "website",
+    "liveUrl": "https://fticonsult.com/",
+    "accent": "#a8c2f7",
     "accentTheme": "dark",
     "title": {
-      "en": "Packaging Concept",
-      "hr": "Koncept ambalaže"
+      "en": "FTIConsult.com",
+      "hr": "FTIConsult.com"
     },
-    "category": "packaging",
-    "categoryLabel": {
-      "en": "Packaging",
-      "hr": "Ambalaža"
-    },
+    "categories": ["web"],
     "year": 2025,
     "intro": {
-      "en": "A packaging direction built around clarity, material feel and confident shelf presence.",
-      "hr": "Smjer ambalaže izgrađen oko jasnoće, dojma materijala i snažne prisutnosti na polici."
+      "en": "A focused client website designed to feel simple and confident yet creative and visually stunning.",
+      "hr": "Usmjerena web stranica oblikovano da djeluje jednostavno i samouvjereno, a opet kreativno i vizualno zapanjujuće."
     },
     "summary": {
-      "en": "A contemporary packaging direction focused on clarity, shelf presence and material character.",
-      "hr": "Suvremen smjer ambalaže usmjeren na jasnoću, prepoznatljivost na polici i karakter materijala."
+      "en": "A creative web experience combining a calm visual system with simple yet intriguing navigation.",
+      "hr": "Kreativno web iskustvo koje kombinira miran vizualni sustav s jednostavnom, a opet intrigantnom navigacijom."
     },
     "client": {
-      "en": "Product Brand",
-      "hr": "Brend proizvoda"
+      "en": "FTI Consulting",
+      "hr": "FTI Consulting"
     },
     "role": {
-      "en": "Packaging design and art direction",
-      "hr": "Dizajn ambalaže i art direkcija"
+      "en": "UX/UI design and website development",
+      "hr": "UX/UI dizajn i razvoj web stranice"
+    },
+    "services": {
+      "en": [
+        "Information Architecture",
+        "UI Design",
+        "Responsive Development",
+        "Photography"
+      ],
+      "hr": [
+        "Informacijska arhitektura",
+        "UI dizajn",
+        "Responzivni razvoj",
+        "Fotografija"
+      ]
+    },
+    "problem": {
+      "en": "To create a website that outlines the clients services and expertise in a clear, confident and visually appealing way.",
+      "hr": "Izrada web stranice koja jasno, samouvjereno i vizualno privlačno predstavlja usluge i stručnost klijenta."
+    },
+    "solution": {
+      "en": "A minimalist yet creative web solution that uses a calm visual system, simple navigation and responsive design to present the clients services and expertise in a unique manner.",
+      "hr": "Minimalistično, a opet kreativno rješenje web stranice koje koristi miran vizualni sustav, jednostavnu navigaciju i responzivni dizajn za jedinstveno predstavljanje usluga i stručnosti klijenta."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/fti-consulting/thumbnail.webp",
+        "alt": {
+          "en": "Placeholder for website project two",
+          "hr": "Rezervirano mjesto za drugi web projekt"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/fti-consulting/hero.webp",
+        "alt": {
+          "en": "Website interface presentation placeholder",
+          "hr": "Rezervirano mjesto za prezentaciju sučelja web stranice"
+        }
+      },
+      "social": "assets/images/projects/fti-consulting/social.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/fti-consulting/web1.webp",
+          "alt": {
+            "en": "Website homepage and interface",
+            "hr": "Naslovnica i sučelje web stranice"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/projects/fti-consulting/web2.webp",
+          "alt": {
+            "en": "Desktop website section",
+            "hr": "Dio web stranice na računalu"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/fti-consulting/web3.webp",
+          "alt": {
+            "en": "Responsive website detail",
+            "hr": "Detalj responzivne web stranice"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "apartmani-lzt",
+      "interface-concept",
+      "zinf"
+    ]
+  },
+  {
+    "id": "grill-cheese",
+    "published": true,
+    "priority": 50,
+    "featured": true,
+    "accent": "#d4b98f",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Packaging for Grill Cheese",
+      "hr": "Ambalaža za grill sir"
+    },
+    "categories": ["packaging"],
+    "year": 2025,
+    "intro": {
+      "en": "A packaging direction built around clarity, clear product presentation and confident shelf presence.",
+      "hr": "Ambalaža oblikovana oko jasnoće, jasne prezentacije proizvoda i samouvjerene prepoznatljivosti na polici."
+    },
+    "summary": {
+      "en": "A compact and clear design, focused on the product itself.",
+      "hr": "Kompaktan i jasan dizajn, usmjeren na sam proizvod."
+    },
+    "client": {
+      "en": "Euromilk",
+      "hr": "Euromilk"
+    },
+    "role": {
+      "en": "Packaging designs, art direction and pre-press, @ F.I.L.-ART",
+      "hr": "Dizajn ambalaže, usmjerenje i priprema za tisak, @ F.I.L.-ART"
     },
     "services": {
       "en": [
@@ -449,23 +433,23 @@
       ]
     },
     "problem": {
-      "en": "Describe the product and market need.",
-      "hr": "Ovdje opiši proizvod i tržišnu potrebu."
+      "en": "Showcase a type of cheese in an appealing way, with clear typography and good shelf presence.",
+      "hr": "Prikazati vrstu sira na privlačan način, s jasnom tipografijom i dobrom prepoznatljivošću na polici."
     },
     "solution": {
-      "en": "Describe the packaging decisions.",
-      "hr": "Ovdje opiši odluke vezane uz ambalažu."
+      "en": "Strong color palette, clear presentation and stand out typography.",
+      "hr": "Snažna paleta boja, jasna prezentacija i upečatljiva tipografija."
     },
     "images": {
       "thumbnail": {
-        "src": "assets/images/placeholders/packaging.svg",
+        "src": "assets/images/projects/grill-cheese/thumbnail.webp",
         "alt": {
           "en": "Placeholder for a packaging project",
           "hr": "Rezervirano mjesto za projekt ambalaže"
         }
       },
       "hero": {
-        "src": "assets/images/placeholders/packaging.svg",
+        "src": "assets/images/projects/grill-cheese/hero.webp",
         "alt": {
           "en": "Placeholder for a packaging project",
           "hr": "Rezervirano mjesto za projekt ambalaže"
@@ -474,26 +458,18 @@
       "social": "assets/images/placeholders/packaging.svg",
       "gallery": [
         {
-          "src": "assets/images/placeholders/packaging.svg",
+          "src": "assets/images/projects/grill-cheese/web1.webp",
           "alt": {
             "en": "Packaging hero image",
             "hr": "Glavna fotografija ambalaže"
           },
-          "size": "wide"
-        },
-        {
-          "src": "assets/images/placeholders/street.svg",
-          "alt": {
-            "en": "Packaging detail photograph",
-            "hr": "Fotografija detalja ambalaže"
-          },
           "size": "half"
         },
         {
-          "src": "assets/images/placeholders/branding.svg",
+          "src": "assets/images/projects/grill-cheese/web2.webp",
           "alt": {
-            "en": "Packaging identity system",
-            "hr": "Sustav identiteta ambalaže"
+            "en": "Packaging detail photograph",
+            "hr": "Fotografija detalja ambalaže"
           },
           "size": "half"
         }
@@ -506,48 +482,46 @@
     ]
   },
   {
-    "id": "digital-experience",
+    "id": "zinf",
     "published": true,
     "priority": 30,
     "featured": true,
-    "accent": "#4d82ba",
+    "accent": "#bd4763",
     "accentTheme": "dark",
     "title": {
-      "en": "Digital Experience",
-      "hr": "Digitalno iskustvo"
+      "en": "Zinfandel",
+      "hr": "Zinfandel"
     },
-    "category": "web",
-    "categoryLabel": {
-      "en": "Web",
-      "hr": "Web"
-    },
+    "categories": ["print", "social"],
     "year": 2025,
     "intro": {
-      "en": "A focused interface that prioritizes content, clarity and frictionless navigation.",
-      "hr": "Usmjereno sučelje koje daje prednost sadržaju, jasnoći i jednostavnoj navigaciji."
+      "en": "Small broshure, menu and social media templates all designed with the brand identity in mind.",
+      "hr": "Mala brošura, jelovnik i predlošci za društvene mreže dizajnirani s vizualnim identitetom brenda na umu."
     },
     "summary": {
-      "en": "A focused digital experience shaped around useful content, direct navigation and responsive behavior.",
-      "hr": "Usmjereno digitalno iskustvo oblikovano oko korisnog sadržaja, izravne navigacije i responzivnog ponašanja."
+      "en": "Keeping the brand identity in focus, this project features a small broshure, a large print menu and social media templates.",
+      "hr": "Ovaj projekt, s vizualnim identitetom brenda u fokusu uključuje malu brošuru, veliki tiskani jelovnik i predloške za društvene mreže."
     },
     "client": {
-      "en": "Digital Product",
-      "hr": "Digitalni proizvod"
+      "en": "Zinfandel",
+      "hr": "Zinfandel"
     },
     "role": {
-      "en": "Web design and UI direction",
-      "hr": "Web dizajn i UI smjer"
+      "en": "Design and pre-press, @ F.I.L-Art",
+      "hr": "Dizajn i priprema za tisak, @ F.I.L-Art"
     },
     "services": {
       "en": [
-        "UX structure",
-        "UI design",
-        "Responsive design"
+        "Broshure design",
+        "Typography",
+        "Print production",
+        "Social assets"
       ],
       "hr": [
-        "UX struktura",
-        "UI dizajn",
-        "Responzivni dizajn"
+        "Dizajn brošure",
+        "Tipografija",
+        "Priprema za tisak",
+        "Objave za društvene mreže"
       ]
     },
     "problem": {
@@ -560,31 +534,31 @@
     },
     "images": {
       "thumbnail": {
-        "src": "assets/images/placeholders/web.svg",
+        "src": "assets/images/projects/zinf/thumbnail.webp",
         "alt": {
           "en": "Placeholder for a web design project",
           "hr": "Rezervirano mjesto za projekt web dizajna"
         }
       },
       "hero": {
-        "src": "assets/images/placeholders/web.svg",
+        "src": "assets/images/projects/zinf/hero.webp",
         "alt": {
           "en": "Placeholder for a web design project",
           "hr": "Rezervirano mjesto za projekt web dizajna"
         }
       },
-      "social": "assets/images/placeholders/web.svg",
+      "social": "assets/images/projects/zinf/social.webp",
       "gallery": [
         {
-          "src": "assets/images/placeholders/web.svg",
+          "src": "assets/images/projects/zinf/web1.webp",
           "alt": {
             "en": "Website presentation",
             "hr": "Prezentacija web stranice"
           },
-          "size": "wide"
+          "size": "half"
         },
         {
-          "src": "assets/images/placeholders/ui.svg",
+          "src": "assets/images/projects/zinf/web2.webp",
           "alt": {
             "en": "Interface component detail",
             "hr": "Detalj komponente sučelja"
@@ -592,7 +566,31 @@
           "size": "half"
         },
         {
-          "src": "assets/images/placeholders/social.svg",
+          "src": "assets/images/projects/zinf/web3.webp",
+          "alt": {
+            "en": "Responsive digital system",
+            "hr": "Responzivni digitalni sustav"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/zinf/web4.webp",
+          "alt": {
+            "en": "Website presentation",
+            "hr": "Prezentacija web stranice"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/zinf/web5.webp",
+          "alt": {
+            "en": "Interface component detail",
+            "hr": "Detalj komponente sučelja"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/zinf/web6.webp",
           "alt": {
             "en": "Responsive digital system",
             "hr": "Responzivni digitalni sustav"
@@ -618,11 +616,7 @@
       "en": "Social Campaign",
       "hr": "Kampanja za društvene mreže"
     },
-    "category": "social",
-    "categoryLabel": {
-      "en": "Social Media",
-      "hr": "Društvene mreže"
-    },
+    "categories": ["social"],
     "year": 2025,
     "intro": {
       "en": "A flexible campaign designed for repeatable, recognizable communication.",
@@ -686,8 +680,8 @@
       ]
     },
     "related": [
-      "packaging-concept",
-      "digital-experience",
+      "grill-cheese",
+      "zinf",
       "gimn-klub"
     ]
   },
@@ -702,11 +696,7 @@
       "en": "Interface Concept",
       "hr": "Koncept sučelja"
     },
-    "category": "ui",
-    "categoryLabel": {
-      "en": "UI",
-      "hr": "UI"
-    },
+    "categories": ["social"],
     "year": 2024,
     "intro": {
       "en": "A structured interface concept focused on consistency and ease of use.",
@@ -770,7 +760,7 @@
       ]
     },
     "related": [
-      "digital-experience",
+      "zinf",
       "knjiga-hrv-zena",
       "social-campaign"
     ]

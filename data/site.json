@@ -20,5 +20,35 @@
     "en": "Portfolio of Tomislav Martinez, graphic designer and photographer.",
     "hr": "Portfolio Tomislava Martineza, grafičkog dizajnera i fotografa."
   },
-  "ogImage": "assets/images/placeholders/branding.svg"
+  "ogImage": "assets/images/placeholders/branding.svg",
+  "categories": {
+    "print": {
+      "en": "Print",
+      "hr": "Tisak"
+    },
+    "editorial": {
+      "en": "Editorial",
+      "hr": "Uredništvo"
+    },
+    "branding": {
+      "en": "Branding",
+      "hr": "Brendiranje"
+    },
+    "web": {
+      "en": "Web Design",
+      "hr": "Web dizajn"
+    },
+    "packaging": {
+      "en": "Packaging",
+      "hr": "Ambalaža"
+    },
+    "social": {
+      "en": "Social Media",
+      "hr": "Društvene mreže"
+    },
+    "photography": {
+      "en": "Photography",
+      "hr": "Fotografija"
+    }
+  }
 }

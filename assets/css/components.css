@@ -110,6 +110,7 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   display: flex;
   flex-direction: column;
   max-width: 1280px;
+  letter-spacing: -.02em;
 }
 
 .hero-role {
@@ -275,13 +276,22 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(28px, 4vw, 68px) clamp(16px, 2.5vw, 36px);
+  columns: 2;
+  column-gap: clamp(16px, 2.5vw, 36px);
 }
 
-.work-card { min-width: 0; }
-.work-card[hidden] { display: none; }
+.work-card {
+  width: 100%;
+  min-width: 0;
+  display: inline-block;
+  break-inside: avoid;
+  margin-bottom: clamp(28px, 4vw, 68px);
+}
+
+.work-card[hidden] {
+  display: none;
+}
+
 .work-card-media {
   aspect-ratio: 4 / 3;
   overflow: hidden;

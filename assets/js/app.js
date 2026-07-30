@@ -14,6 +14,37 @@ const state = {
   filter: "all"
 };
 
+const categoryLabels = {
+  print: {
+    en: "Print",
+    hr: "Tisak"
+  },
+  editorial: {
+    en: "Editorial",
+    hr: "Uredništvo"
+  },
+  branding: {
+    en: "Branding",
+    hr: "Brendiranje"
+  },
+  web: {
+    en: "Web Design",
+    hr: "Web dizajn"
+  },
+  photography: {
+    en: "Photography",
+    hr: "Fotografija"
+  },
+  packaging: {
+    en: "Packaging",
+    hr: "Ambalaža"
+  },
+  social: {
+    en: "Social Media",
+    hr: "Društvene mreže"
+  }
+};
+
 const translations = {
   en: {
     "nav.work": "Work",
@@ -41,7 +72,7 @@ const translations = {
     "about.placeholder": "This section is intentionally left simple until the final text is ready.",
     "contact.eyebrow": "Contact",
     "contact.title": "Have a project in mind?",
-    "contact.copy": "Add your email and social links in data/site.json when you are ready.",
+    "contact.copy": "Feel free to reach out for collaborations, freelance work, or just to say hi. I’m always open to discussing new projects and ideas!",
     "contact.cta": "Get in touch",
     "footer.back": "Back to top",
     "card.view": "View case study",
@@ -76,7 +107,7 @@ const translations = {
     "about.placeholder": "Ovaj je odjeljak namjerno jednostavan dok završni tekst ne bude spreman.",
     "contact.eyebrow": "Kontakt",
     "contact.title": "Imaš projekt na umu?",
-    "contact.copy": "Dodaj svoju e-mail adresu i poveznice u data/site.json kada budeš spreman.",
+    "contact.copy": "Slobodno se javi za suradnju, freelance projekte ili samo da kažeš bok. Uvijek sam otvoren za razgovor o novim projektima i idejama!",
     "contact.cta": "Javi se",
     "footer.back": "Povratak na vrh",
     "card.view": "Otvori projekt",
@@ -132,35 +163,99 @@ function createFeaturedCard(project) {
   const image = projectImage(project, "thumbnail");
   const caseStudyUrl = projectUrl(project);
   const liveUrl = project.liveUrl?.trim();
+
+  const categories = (
+    Array.isArray(project.categories)
+      ? project.categories
+      : project.category
+        ? [project.category]
+        : []
+  )
+    .map(category => String(category).trim())
+    .filter(Boolean);
+
+  const categoryText = categories
+    .map(category => {
+      const label = categoryLabels[category];
+      return label ? localized(label) : category;
+    })
+    .join(" · ");
+
   const article = document.createElement("article");
+
   article.className = "project-card reveal";
-  article.style.setProperty("--card-accent", project.accent || "currentColor");
+  article.style.setProperty(
+    "--card-accent",
+    project.accent || "currentColor"
+  );
+
+  article.dataset.categories = categories.join(" ");
+
   article.innerHTML = `
-    <a class="project-card-image-link" href="${caseStudyUrl}" aria-label="${localized(project.title)}">
+    <a
+      class="project-card-image-link"
+      href="${caseStudyUrl}"
+      aria-label="${localized(project.title)}"
+    >
       <div class="project-card-image">
-        <img src="${image.src}" alt="${localized(image.alt)}" loading="lazy" decoding="async">
+        <img
+          src="${image.src}"
+          alt="${localized(image.alt)}"
+          loading="lazy"
+          decoding="async"
+        >
       </div>
     </a>
+
     <div class="project-card-content">
       <div class="project-card-meta">
         <div>
-          <span>${localized(project.categoryLabel)}</span>
+          ${categoryText ? `<span>${categoryText}</span>` : ""}
           <span>${project.year}</span>
         </div>
-        ${liveUrl ? `<span class="live-site-badge">${t("card.live")}</span>` : ""}
+
+        ${
+          liveUrl
+            ? `<span class="live-site-badge">${t("card.live")}</span>`
+            : ""
+        }
       </div>
-      <h3><a href="${caseStudyUrl}">${localized(project.title)}</a></h3>
-      <p class="project-card-description">${localized(project.summary)}</p>
+
+      <h3>
+        <a href="${caseStudyUrl}">
+          ${localized(project.title)}
+        </a>
+      </h3>
+
+      <p class="project-card-description">
+        ${localized(project.summary)}
+      </p>
+
       <div class="project-card-actions">
         <a class="card-link-label" href="${caseStudyUrl}">
-          <span>${t("card.view")}</span><span aria-hidden="true">↗</span>
+          <span>${t("card.view")}</span>
+          <span aria-hidden="true">↗</span>
         </a>
-        ${liveUrl ? `
-          <a class="card-link-label card-link-external" href="${liveUrl}" target="_blank" rel="noopener noreferrer">
-            <span>${t("card.visit")}</span><span aria-hidden="true">↗</span>
-          </a>` : ""}
+
+        ${
+          liveUrl
+            ? `
+              <a
+                class="card-link-label card-link-external"
+                href="${liveUrl}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>${t("card.visit")}</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            `
+            : ""
+        }
       </div>
-    </div>`;
+    </div>
+  `;
+
   return article;
 }
 
@@ -168,28 +263,96 @@ function createWorkCard(project) {
   const image = projectImage(project, "thumbnail");
   const caseStudyUrl = projectUrl(project);
   const liveUrl = project.liveUrl?.trim();
+
+  const categories = Array.isArray(project.categories)
+    ? project.categories
+    : project.category
+      ? [project.category]
+      : [];
+
+  const categoryText = categories
+    .map(category => {
+      const label = categoryLabels[category];
+      return label ? localized(label) : category;
+    })
+    .join(" · ");
+
   const article = document.createElement("article");
+
   article.className = "work-card reveal";
-  article.style.setProperty("--card-accent", project.accent || "currentColor");
-  article.dataset.category = project.category;
+  article.style.setProperty(
+    "--card-accent",
+    project.accent || "currentColor"
+  );
+
+  article.dataset.categories = categories.join(" ");
+
   article.innerHTML = `
-    <a class="work-card-main-link" href="${caseStudyUrl}" aria-label="${localized(project.title)}">
+    <a
+      class="work-card-main-link"
+      href="${caseStudyUrl}"
+      aria-label="${localized(project.title)}"
+    >
       <div class="work-card-media">
-        <img src="${image.src}" alt="${localized(image.alt)}" loading="lazy" decoding="async">
+        <img
+          src="${image.src}"
+          alt="${localized(image.alt)}"
+          loading="lazy"
+          decoding="async"
+        >
       </div>
     </a>
+
     <div class="work-card-copy">
       <div>
-        <h3><a href="${caseStudyUrl}">${localized(project.title)}</a></h3>
-        <p class="work-card-meta">${localized(project.categoryLabel)} · ${project.year}</p>
+        <h3>
+          <a href="${caseStudyUrl}">
+            ${localized(project.title)}
+          </a>
+        </h3>
+
+        <p class="work-card-meta">
+          ${categoryText} · ${project.year}
+        </p>
+
         <div class="work-card-actions">
-          <a class="small-text-link" href="${caseStudyUrl}"><span>${t("card.view")}</span><span aria-hidden="true">↗</span></a>
-          ${liveUrl ? `<a class="small-text-link is-external" href="${liveUrl}" target="_blank" rel="noopener noreferrer"><span>${t("card.visit")}</span><span aria-hidden="true">↗</span></a>` : ""}
+          <a class="small-text-link" href="${caseStudyUrl}">
+            <span>${t("card.view")}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          ${
+            liveUrl
+              ? `
+                <a
+                  class="small-text-link is-external"
+                  href="${liveUrl}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>${t("card.visit")}</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              `
+              : ""
+          }
         </div>
       </div>
-      <a class="work-card-arrow" href="${caseStudyUrl}" aria-label="${t("card.view")}"><span aria-hidden="true">↗</span></a>
-    </div>`;
-  article.hidden = state.filter !== "all" && state.filter !== project.category;
+
+      <a
+        class="work-card-arrow"
+        href="${caseStudyUrl}"
+        aria-label="${t("card.view")}"
+      >
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  `;
+
+  article.hidden =
+    state.filter !== "all" &&
+    !categories.includes(state.filter);
+
   return article;
 }
 
@@ -203,10 +366,44 @@ function renderProjects() {
 
 function getFilters() {
   const categories = new Map();
+
   projects.forEach(project => {
-    if (!categories.has(project.category)) categories.set(project.category, project.categoryLabel);
+    const projectCategories = (
+      Array.isArray(project.categories)
+        ? project.categories
+        : project.category
+          ? [project.category]
+          : []
+    )
+      .map(category => String(category).trim())
+      .filter(Boolean);
+
+    projectCategories.forEach(category => {
+      if (!categories.has(category)) {
+        categories.set(
+          category,
+          categoryLabels[category] || {
+            en: category,
+            hr: category
+          }
+        );
+      }
+    });
   });
-  return [{ id: "all", label: { en: "All", hr: "Sve" } }, ...[...categories].map(([id, label]) => ({ id, label }))];
+
+  return [
+    {
+      id: "all",
+      label: {
+        en: "All",
+        hr: "Sve"
+      }
+    },
+    ...[...categories].map(([id, label]) => ({
+      id,
+      label
+    }))
+  ];
 }
 
 function renderFilters() {

@@ -161,28 +161,58 @@ function renderGallery() {
   }));
 }
 
-function renderRelated() {
+function renderRelated(categoryLabels) {
   const related = document.querySelector("[data-related-projects]");
   const relatedProjects = automaticRelatedProjects(project, projects);
-  related.replaceChildren(...relatedProjects.map(item => {
-    const image = projectImage(item, "thumbnail");
-    const article = document.createElement("article");
-    article.className = "related-card reveal";
-    article.innerHTML = `
-      <a href="${projectUrl(item)}">
-        <div class="related-card-media">
-          <img src="${image.src}" alt="${localized(image.alt)}" loading="lazy" decoding="async">
-        </div>
-        <div class="related-card-copy">
-          <div>
-            <h3>${localized(item.title)}</h3>
-            <p>${localized(item.categoryLabel)} · ${item.year}</p>
+
+  related.replaceChildren(
+    ...relatedProjects.map(item => {
+      const image = projectImage(item, "thumbnail");
+
+      const categories = Array.isArray(item.categories)
+        ? item.categories
+        : item.category
+          ? [item.category]
+          : [];
+
+      const categoryText = categories
+        .map(category => {
+          const label = site.categories?.[category];
+          return label ? localized(label) : category;
+        })
+        .join(" · ");
+
+      const article = document.createElement("article");
+      article.className = "related-card reveal";
+
+      article.innerHTML = `
+        <a href="${projectUrl(item)}">
+          <div class="related-card-media">
+            <img
+              src="${image.src}"
+              alt="${localized(image.alt)}"
+              loading="lazy"
+              decoding="async"
+            >
           </div>
-          <span class="related-arrow" aria-hidden="true">↗</span>
-        </div>
-      </a>`;
-    return article;
-  }));
+
+          <div class="related-card-copy">
+            <div>
+              <h3>${localized(item.title)}</h3>
+
+              <p>
+                ${categoryText}${categoryText ? " · " : ""}${item.year}
+              </p>
+            </div>
+
+            <span class="related-arrow" aria-hidden="true">↗</span>
+          </div>
+        </a>
+      `;
+
+      return article;
+    })
+  );
 }
 
 function observeReveals() {
