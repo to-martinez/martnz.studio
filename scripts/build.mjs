@@ -45,7 +45,7 @@ function validateProjects(items) {
   const ids = new Set();
   for (const [index, project] of items.entries()) {
     const label = project.id || `project at index ${index}`;
-    for (const field of ["id", "title", "category", "categoryLabel", "summary", "images"]) {
+    for (const field of ["id", "title", "categories", "categoryLabel", "summary", "images"]) {
       if (!project[field]) throw new Error(`${label} is missing required field: ${field}`);
     }
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id)) {
