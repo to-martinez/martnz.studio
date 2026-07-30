@@ -296,21 +296,21 @@
       ]
     },
     "related": [
-      "editorial-project",
+      "knjiga-hrv-zena",
       "packaging-concept",
       "digital-experience"
     ]
   },
   {
-    "id": "editorial-project",
+    "id": "knjiga-hrv-zena",
     "published": true,
     "priority": 50,
     "featured": true,
     "accent": "#b0ac59",
     "accentTheme": "dark",
     "title": {
-      "en": "Editorial Project",
-      "hr": "Urednički projekt"
+      "en": "Book project",
+      "hr": "Knjiga projekt"
     },
     "category": "print",
     "categoryLabel": {
@@ -319,7 +319,7 @@
     },
     "year": 2025,
     "intro": {
-      "en": "A calm editorial structure for dense, information-rich content.",
+      "en": "A calm editorial structure for dense, information and picture-rich content.",
       "hr": "Miran urednički sustav za gust i sadržajno zahtjevan materijal."
     },
     "summary": {
@@ -327,12 +327,12 @@
       "hr": "Urednički sustav koji usklađuje veliku količinu informacija, jasnu hijerarhiju i miran ritam čitanja."
     },
     "client": {
-      "en": "Editorial Client",
-      "hr": "Urednički klijent"
+      "en": "'Hrvatska žena' Association, Krapina",
+      "hr": "Udruga 'Hrvatska žena' Krapina"
     },
     "role": {
-      "en": "Editorial design and layout",
-      "hr": "Urednički dizajn i prijelom"
+      "en": "Editorial design and layout, at F.I.L.-ART",
+      "hr": "Urednički dizajn i prijelom, u F.I.L.-ART-u"
     },
     "services": {
       "en": [
@@ -341,18 +341,18 @@
         "Print production"
       ],
       "hr": [
-        "Urednički sustav",
+        "Uredništvo",
         "Tipografija",
         "Priprema za tisak"
       ]
     },
     "problem": {
-      "en": "Describe the communication challenge here.",
-      "hr": "Ovdje opiši komunikacijski izazov."
+      "en": "Design and lay out a 300-page commemorative book celebrating the history and achievements of the Association, balancing readability, archival content, and a cohesive editorial system.",
+      "hr": "Dizajnirati i prijelomiti 300-straničnu knjigu u spomen na povijest i postignuća Udruge, balansirajući čitljivost, arhivski sadržaj i kohezivan urednički sustav."
     },
     "solution": {
-      "en": "Describe the layout system you created.",
-      "hr": "Ovdje opiši sustav prijeloma koji si izradio."
+      "en": "A visualy pleasing and balanced layout that uses a clear typographic hierarchy, a calm reading rhythm, and a cohesive editorial system to present the content in an engaging and accessible way.",
+      "hr": "Vizualno ugodan i uravnotežen prijelom koji koristi jasnu tipografsku hijerarhiju, miran ritam čitanja i kohezivan urednički sustav za prezentaciju sadržaja na zanimljiv i pristupačan način."
     },
     "images": {
       "thumbnail": {
@@ -369,10 +369,10 @@
           "hr": "Rezervirano mjesto za projekt tiskanog dizajna"
         }
       },
-      "social": "assets/images/placeholders/print.svg",
+      "social": "assets/images/projects/hrv-zena/social.webp",
       "gallery": [
         {
-          "src": "assets/images/placeholders/print.svg",
+          "src": "assets/images/projects/hrv-zena/web2.webp",
           "alt": {
             "en": "Editorial cover and spreads",
             "hr": "Naslovnica i prijelomi publikacije"
@@ -380,15 +380,15 @@
           "size": "wide"
         },
         {
-          "src": "assets/images/placeholders/branding.svg",
+          "src": "assets/images/projects/hrv-zena/web1.webp",
           "alt": {
             "en": "Editorial typography detail",
             "hr": "Detalj uredničke tipografije"
           },
-          "size": "half"
+          "size": "wide"
         },
         {
-          "src": "assets/images/placeholders/web.svg",
+          "src": "assets/images/projects/hrv-zena/web3.webp",
           "alt": {
             "en": "Editorial system detail",
             "hr": "Detalj uredničkog sustava"
@@ -501,7 +501,7 @@
     },
     "related": [
       "gimn-klub",
-      "editorial-project",
+      "knjiga-hrv-zena",
       "social-campaign"
     ]
   },
@@ -604,7 +604,7 @@
     "related": [
       "interface-concept",
       "gimn-klub",
-      "editorial-project"
+      "knjiga-hrv-zena"
     ]
   },
   {
@@ -771,7 +771,7 @@
     },
     "related": [
       "digital-experience",
-      "editorial-project",
+      "knjiga-hrv-zena",
       "social-campaign"
     ]
   }
