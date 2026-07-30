@@ -42,6 +42,10 @@ const categoryLabels = {
   social: {
     en: "Social Media",
     hr: "Društvene mreže"
+  },
+  vehicle: {
+    en: "Vehicle Livery",
+    hr: "Vozila"
   }
 };
 
@@ -69,7 +73,8 @@ const translations = {
     "photo.open": "Open image",
     "about.eyebrow": "About",
     "about.title": "Hi, I'm Tomislav!",
-    "about.placeholder": "I'm a passionate graphic designer and photographer based in Croatia. My work is driven by creativity, attention to detail, and a desire to create intriguing and unique work.",
+    "about.placeholder": "I'm a passionate graphic designer and photographer based in Croatia. I'm driven by creativity, attention to detail, and a desire to create intriguing and unique work.",
+    "about.placeholder2": "As a fast learner and problem-solver, I thrive in dynamic environments and enjoy tackling complex challenges.",
     "contact.eyebrow": "Contact",
     "contact.title": "Have a project in mind?",
     "contact.copy": "Feel free to reach out for collaborations, freelance work, or just to say hi. I’m always open to discussing new projects and ideas!",
@@ -104,7 +109,8 @@ const translations = {
     "photo.open": "Otvori fotografiju",
     "about.eyebrow": "O meni",
     "about.title": "Bok, ja sam Tomislav!",
-    "about.placeholder": "Strastveni sam grafički dizajner i fotograf iz Hrvatske. Moj rad pokreće kreativnost, pažnja prema detaljima i želja za stvaranjem intrigantnih i jedinstvenih radova.",
+    "about.placeholder": "Strastveni sam grafički dizajner i fotograf iz Hrvatske. Pokreće me kreativnost, pažnja prema detaljima i želja za stvaranjem intrigantnih i jedinstvenih radova.",
+    "about.placeholder2": "Brzo učim i volim rješavati probleme, stoga uživam u dinamičnim okruženjima i volim se upuštati u složene izazove.",
     "contact.eyebrow": "Kontakt",
     "contact.title": "Imaš projekt na umu?",
     "contact.copy": "Slobodno se javi za suradnju, freelance projekte ili samo da kažeš bok. Uvijek sam otvoren za razgovor o novim projektima i idejama!",

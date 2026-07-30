@@ -49,6 +49,10 @@
     "photography": {
       "en": "Photography",
       "hr": "Fotografija"
+    },
+    "vehicle": {
+      "en": "Vehicle Livery",
+      "hr": "Reklamna folija vozila"
     }
   }
 }

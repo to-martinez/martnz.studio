@@ -91,7 +91,7 @@
     "related": [
       "fti-consulting",
       "zinf",
-      "interface-concept"
+      "euromilk-kombi"
     ]
   },
   {
@@ -391,7 +391,7 @@
     },
     "related": [
       "apartmani-lzt",
-      "interface-concept",
+      "euromilk-kombi",
       "zinf"
     ]
   },
@@ -605,7 +605,7 @@
       ]
     },
     "related": [
-      "interface-concept",
+      "euromilk-kombi",
       "gimn-klub",
       "knjiga-hrv-zena"
     ]
@@ -616,47 +616,47 @@
     "priority": 20,
     "featuredPriority": 70,
     "featured": true,
-    "accent": "#6a8fae",
+    "accent": "#6aa1bd",
     "accentTheme": "dark",
     "title": {
       "en": "Hotel Vitar",
       "hr": "Hotel Vitar"
     },
-    "categories": ["social"],
+    "categories": ["print", "vehicle"],
     "year": 2025,
     "intro": {
       "en": "Hotel company car livery design.",
       "hr": "Dizajn reklamne folije za automobil."
     },
     "summary": {
-      "en": "",
-      "hr": ""
+      "en": "A modern and attention grabbing vehicle livery applied to a Volkswagen ID.3.",
+      "hr": "Moderna i privlačna reklamna folija primijenjena na Volkswagen ID.3."
     },
     "client": {
       "en": "Hotel Vitar",
       "hr": "Hotel Vitar"
     },
     "role": {
-      "en": "Campaign design",
-      "hr": "Dizajn kampanje"
+      "en": "Graphic designer @ F.I.L.-ART",
+      "hr": "Grafički dizajner @ F.I.L.-ART"
     },
     "services": {
       "en": [
-        "Campaign system",
-        "Social assets"
+        "Graphic design",
+        "Press preparation"
       ],
       "hr": [
-        "Sustav kampanje",
-        "Objave za društvene mreže"
+        "Grafički dizajn",
+        "Priprema za tisak"
       ]
     },
     "problem": {
-      "en": "",
-      "hr": ""
+      "en": "To design a modern and recognizable vehicle livery that covers only the door panels and the hood.",
+      "hr": "Dizajn moderne i prepoznatljive reklamne folije za vozilo koja pokriva samo vrata i poklopac motora."
     },
     "solution": {
-      "en": "",
-      "hr": ""
+      "en": "A smooth and aerodynamic solution that creates motion and grounds the brand identity simultaniously.",
+      "hr": "Mirno i aerodinamično rješenje koje stvara pokret i utvrđuje identitet brenda istovremeno."
     },
     "images": {
       "thumbnail": {
@@ -678,26 +678,18 @@
         {
           "src": "assets/images/projects/hotel-vitar/web1.webp",
           "alt": {
-            "en": "Campaign assets",
-            "hr": "Materijali kampanje"
+            "en": "Design file, work in progress",
+            "hr": "Datoteka dizajna, dizajn u izradi"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/hotel-vitar/web2.webp",
           "alt": {
-            "en": "Campaign assets",
-            "hr": "Materijali kampanje"
+            "en": "Car mockup",
+            "hr": "Mockup automobila"
           },
           "size": "half"
-        },
-        {
-          "src": "assets/images/projects/hotel-vitar/web3.webp",
-          "alt": {
-            "en": "Campaign assets",
-            "hr": "Materijali kampanje"
-          },
-          "size": "wide"
         }
       ]
     },
@@ -708,62 +700,62 @@
     ]
   },
   {
-    "id": "interface-concept",
-    "published": false,
+    "id": "euromilk-kombi",
+    "published": true,
     "priority": 10,
     "featured": false,
     "accent": "#7f8796",
     "accentTheme": "dark",
     "title": {
-      "en": "Interface Concept",
-      "hr": "Koncept sučelja"
+      "en": "Euromilk Van Liveries",
+      "hr": "Euromilk dizajn Kombi vozila"
     },
-    "categories": ["social"],
-    "year": 2024,
+    "categories": ["print", "vehicle"],
+    "year": 2025,
     "intro": {
-      "en": "A structured interface concept focused on consistency and ease of use.",
-      "hr": "Strukturiran koncept sučelja usmjeren na dosljednost i jednostavnost korištenja."
+      "en": "Van and truck livery design.",
+      "hr": "Dizajn reklamnih folije za kombi vozila."
     },
     "summary": {
-      "en": "A clear, structured interface concept.",
-      "hr": "Jasan i strukturiran koncept sučelja."
+      "en": "A modern and attention grabbing vehicle livery applied to a Volkswagen ID.3.",
+      "hr": "Moderna i privlačna reklamna folija primijenjena na Volkswagen ID.3."
     },
     "client": {
-      "en": "Product Concept",
-      "hr": "Koncept proizvoda"
+      "en": "Euromilk",
+      "hr": "Euromilk"
     },
     "role": {
-      "en": "Interface design",
-      "hr": "Dizajn sučelja"
+      "en": "Graphic designer @ F.I.L.-ART",
+      "hr": "Grafički dizajner @ F.I.L.-ART"
     },
     "services": {
       "en": [
-        "UI design",
-        "Design system"
+        "Graphic design",
+        "Press preparation"
       ],
       "hr": [
-        "UI dizajn",
-        "Sustav dizajna"
+        "Grafički dizajn",
+        "Priprema za tisak"
       ]
     },
     "problem": {
-      "en": "",
-      "hr": ""
+      "en": "To design a full coverage vehicle livery that is modern, recognizable and applicable to a variety of vehicles.",
+      "hr": "Dizajn kompletne reklamne folije za vozilo koja je moderna, prepoznatljiva i primjenjiva na različite tipove vozila."
     },
     "solution": {
-      "en": "",
-      "hr": ""
+      "en": "A dynamic and scalable design, using vectors and flow to create a sense of motion and brand recognition at any scale.",
+      "hr": "Dinamičan i skalabilan dizajn, koristeći vektore i tokove za stvaranje osjećaja pokreta i prepoznatljivosti brenda u bilo kojoj veličini."
     },
     "images": {
       "thumbnail": {
-        "src": "assets/images/placeholders/ui.svg",
+        "src": "assets/images/projects/euromilk-kombi/thumbnail.webp",
         "alt": {
           "en": "Placeholder for a UI design project",
           "hr": "Rezervirano mjesto za projekt dizajna sučelja"
         }
       },
       "hero": {
-        "src": "assets/images/placeholders/ui.svg",
+        "src": "assets/images/projects/euromilk-kombi/hero.webp",
         "alt": {
           "en": "Placeholder for a UI design project",
           "hr": "Rezervirano mjesto za projekt dizajna sučelja"
@@ -772,12 +764,44 @@
       "social": "assets/images/placeholders/ui.svg",
       "gallery": [
         {
-          "src": "assets/images/placeholders/ui.svg",
+          "src": "assets/images/projects/euromilk-kombi/web1.webp",
           "alt": {
-            "en": "Interface concept",
-            "hr": "Koncept sučelja"
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
           },
           "size": "wide"
+        },
+        {
+          "src": "assets/images/projects/euromilk-kombi/web2.webp",
+          "alt": {
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/euromilk-kombi/web3.webp",
+          "alt": {
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/euromilk-kombi/web4.webp",
+          "alt": {
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/euromilk-kombi/web5.webp",
+          "alt": {
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
+          },
+          "size": "half"
         }
       ]
     },
