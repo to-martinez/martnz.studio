@@ -1,0 +1,24 @@
+{
+  "name": "Tomislav Martinez",
+  "title": {
+    "en": "Graphic Designer & Photographer",
+    "hr": "Grafički dizajner i fotograf"
+  },
+  "about": {
+    "en": "",
+    "hr": ""
+  },
+  "email": "hello@example.com",
+  "social": {
+    "instagram": "",
+    "linkedin": "",
+    "behance": "",
+    "github": ""
+  },
+  "url": "https://your-domain.com",
+  "description": {
+    "en": "Portfolio of Tomislav Martinez, graphic designer and photographer.",
+    "hr": "Portfolio Tomislava Martineza, grafičkog dizajnera i fotografa."
+  },
+  "ogImage": "assets/images/placeholders/branding.svg"
+}

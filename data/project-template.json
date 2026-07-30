@@ -1,0 +1,81 @@
+{
+  "id": "project-name",
+  "published": true,
+  "priority": 70,
+  "featured": true,
+  "accent": "#8a5a44",
+  "accentTheme": "dark",
+  "title": {
+    "en": "Project Name",
+    "hr": "Naziv projekta"
+  },
+  "category": "branding",
+  "categoryLabel": {
+    "en": "Branding / Logos",
+    "hr": "Brending / Logotipi"
+  },
+  "year": 2026,
+  "intro": {
+    "en": "One concise sentence introducing the project.",
+    "hr": "Jedna sažeta rečenica koja predstavlja projekt."
+  },
+  "summary": {
+    "en": "A short description used on cards and in search results.",
+    "hr": "Kratak opis za kartice i rezultate pretraživanja."
+  },
+  "client": {
+    "en": "Client Name",
+    "hr": "Naziv klijenta"
+  },
+  "role": {
+    "en": "Visual identity and art direction",
+    "hr": "Vizualni identitet i art direkcija"
+  },
+  "services": {
+    "en": ["Strategy", "Visual identity", "Art direction"],
+    "hr": ["Strategija", "Vizualni identitet", "Art direkcija"]
+  },
+  "problem": {
+    "en": "Describe the challenge.",
+    "hr": "Opiši izazov."
+  },
+  "solution": {
+    "en": "Describe the approach and result.",
+    "hr": "Opiši pristup i rezultat."
+  },
+  "images": {
+    "thumbnail": {
+      "src": "assets/images/projects/project-name/thumbnail.webp",
+      "alt": {
+        "en": "Project thumbnail",
+        "hr": "Naslovna slika projekta"
+      }
+    },
+    "hero": {
+      "src": "assets/images/projects/project-name/hero.webp",
+      "alt": {
+        "en": "Project hero image",
+        "hr": "Glavna slika projekta"
+      }
+    },
+    "social": "assets/images/projects/project-name/social.webp",
+    "gallery": [
+      {
+        "src": "assets/images/projects/project-name/01.webp",
+        "alt": {
+          "en": "Describe what is visible",
+          "hr": "Opiši što je vidljivo"
+        },
+        "size": "wide"
+      },
+      {
+        "src": "assets/images/projects/project-name/02.webp",
+        "alt": {
+          "en": "Describe what is visible",
+          "hr": "Opiši što je vidljivo"
+        },
+        "size": "half"
+      }
+    ]
+  }
+}

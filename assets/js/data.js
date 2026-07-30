@@ -1,0 +1,61 @@
+const JSON_OPTIONS = { cache: "no-cache" };
+
+async function fetchJson(path) {
+  const url = new URL(path, document.baseURI);
+  const response = await fetch(url, JSON_OPTIONS);
+  if (!response.ok) {
+    throw new Error(`Could not load ${path} (${response.status})`);
+  }
+  return response.json();
+}
+
+export async function loadPortfolioData() {
+  const [site, projects] = await Promise.all([
+    fetchJson("data/site.json"),
+    fetchJson("data/projects.json")
+  ]);
+
+  if (!Array.isArray(projects)) {
+    throw new TypeError("data/projects.json must contain an array of projects.");
+  }
+
+  return {
+    site,
+    projects: projects
+      .filter(project => project.published !== false)
+      .sort((a, b) => (b.priority ?? 0) - (a.priority ?? 0))
+  };
+}
+
+export function localize(value, language = "en") {
+  if (typeof value === "string") return value;
+  if (Array.isArray(value)) return value;
+  return value?.[language] ?? value?.en ?? "";
+}
+
+export function projectUrl(project) {
+  return `projects/${encodeURIComponent(project.id)}/`;
+}
+
+export function projectImage(project, type = "thumbnail") {
+  const image = project.images?.[type];
+  if (typeof image === "string") return { src: image, alt: project.title };
+  return image ?? project.images?.hero ?? project.images?.thumbnail ?? { src: "", alt: "" };
+}
+
+export function automaticRelatedProjects(project, projects, limit = 3) {
+  const explicit = Array.isArray(project.related)
+    ? project.related
+        .map(id => projects.find(candidate => candidate.id === id))
+        .filter(Boolean)
+    : [];
+
+  const alreadyIncluded = new Set([project.id, ...explicit.map(item => item.id)]);
+  const sameCategory = projects.filter(candidate =>
+    !alreadyIncluded.has(candidate.id) && candidate.category === project.category
+  );
+  sameCategory.forEach(item => alreadyIncluded.add(item.id));
+
+  const remaining = projects.filter(candidate => !alreadyIncluded.has(candidate.id));
+  return [...explicit, ...sameCategory, ...remaining].slice(0, limit);
+}

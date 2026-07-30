@@ -1,0 +1,778 @@
+[
+  {
+    "id": "apartmani-lzt",
+    "published": true,
+    "priority": 80,
+    "featured": true,
+    "type": "website",
+    "liveUrl": "https://apartmani-lzt.com",
+    "accent": "#ff588e",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Apartmani-LZT.com",
+      "hr": "Apartmani-LZT.com"
+    },
+    "category": "web", 
+    "categoryLabel": {
+      "en": "Web Design",
+      "hr": "Web dizajn"
+    },
+    "year": 2025,
+    "intro": {
+      "en": "A responsive website built around clarity, speed and uniqueness.",
+      "hr": "Responzivna web stranica oblikovana oko jasnoće, brzine i unikatnosti."
+    },
+    "summary": {
+      "en": "A modern website designed to present the apartments amenities clearly and uniquely across desktop and mobile.",
+      "hr": "Moderna web stranica osmišljena za unikatno i jasno predstavljanje usluga apartmana na računalu i mobitelu."
+    },
+    "client": {
+      "en": "Apartments LZT",
+      "hr": "Apartmani LZT"
+    },
+    "role": {
+      "en": "Web design and front-end development",
+      "hr": "Web dizajn i front-end razvoj"
+    },
+    "services": {
+      "en": [
+        "UX/UI Design",
+        "Front-end Development",
+        "Responsive Design"
+      ],
+      "hr": [
+        "UX/UI dizajn",
+        "Front-end razvoj",
+        "Responzivni dizajn"
+      ]
+    },
+    "problem": {
+      "en": "Creating a modern, resposive website that will attract potential guests and clearly present the apartments amenities.",
+      "hr": "Izdrada moderne, responzivne web stranice koja će privući potencijalne goste i jasno predstaviti usluge apartmana."
+    },
+    "solution": {
+      "en": "A creative and intuitive web solution that uses interactive elements and a clear visual hierarchy to present the apartments in a unique way.",
+      "hr": "Kreativno i intuitivno rješenje za web stranicu koje koristi interaktivne elemente i jasnu vizualnu hijerarhiju za jedinstveno prezentiranje apartmana."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/apartmani-lzt/thumbnail.webp",
+        "alt": {
+          "en": "Apartments LZT Website screenshot",
+          "hr": "Apartmani LZT Web stranica - snimka zaslona"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/apartmani-lzt/hero.webp",
+        "alt": {
+          "en": "Full-width website presentation placeholder",
+          "hr": "Rezervirano mjesto za prezentaciju web stranice"
+        }
+      },
+      "social": "assets/images/projects/apartmani-lzt/web.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/apartmani-lzt/web.webp",
+          "alt": {
+            "en": "Full desktop website screenshot",
+            "hr": "Cijeli prikaz web stranice na računalu"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/projects/apartmani-lzt/web2.webp",
+          "alt": {
+            "en": "Website interface detail",
+            "hr": "Detalj sučelja web stranice"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "fti-consulting",
+      "digital-experience",
+      "interface-concept"
+    ]
+  },
+  {
+    "id": "fti-consulting",
+    "published": true,
+    "priority": 70,
+    "featured": true,
+    "type": "website",
+    "liveUrl": "https://fticonsult.com/",
+    "accent": "#a8c2f7",
+    "accentTheme": "dark",
+    "title": {
+      "en": "FTIConsult.com",
+      "hr": "FTIConsult.com"
+    },
+    "category": "web",
+    "categoryLabel": {
+      "en": "Web Design",
+      "hr": "Web dizajn"
+    },
+    "year": 2025,
+    "intro": {
+      "en": "A focused client website designed to feel simple and confident yet creative and visually stunning.",
+      "hr": "Usmjerena web stranica oblikovano da djeluje jednostavno i samouvjereno, a opet kreativno i vizualno zapanjujuće."
+    },
+    "summary": {
+      "en": "A creative web experience combining a calm visual system with simple yet intriguing navigation.",
+      "hr": "Kreativno web iskustvo koje kombinira miran vizualni sustav s jednostavnom, a opet intrigantnom navigacijom."
+    },
+    "client": {
+      "en": "FTI Consulting",
+      "hr": "FTI Consulting"
+    },
+    "role": {
+      "en": "UX/UI design and website development",
+      "hr": "UX/UI dizajn i razvoj web stranice"
+    },
+    "services": {
+      "en": [
+        "Information Architecture",
+        "UI Design",
+        "Responsive Development"
+      ],
+      "hr": [
+        "Informacijska arhitektura",
+        "UI dizajn",
+        "Responzivni razvoj"
+      ]
+    },
+    "problem": {
+      "en": "To create a website that outlines the clients services and expertise in a clear, confident and visually appealing way.",
+      "hr": "Izrada web stranice koja jasno, samouvjereno i vizualno privlačno predstavlja usluge i stručnost klijenta."
+    },
+    "solution": {
+      "en": "A minimalist yet creative web solution that uses a calm visual system, simple navigation and responsive design to present the clients services and expertise in a unique manner.",
+      "hr": "Minimalistično, a opet kreativno rješenje web stranice koje koristi miran vizualni sustav, jednostavnu navigaciju i responzivni dizajn za jedinstveno predstavljanje usluga i stručnosti klijenta."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/fti-consulting/thumbnail.webp",
+        "alt": {
+          "en": "Placeholder for website project two",
+          "hr": "Rezervirano mjesto za drugi web projekt"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/fti-consulting/hero.webp",
+        "alt": {
+          "en": "Website interface presentation placeholder",
+          "hr": "Rezervirano mjesto za prezentaciju sučelja web stranice"
+        }
+      },
+      "social": "assets/images/projects/fti-consulting/social.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/fti-consulting/web1.webp",
+          "alt": {
+            "en": "Website homepage and interface",
+            "hr": "Naslovnica i sučelje web stranice"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/projects/fti-consulting/web2.webp",
+          "alt": {
+            "en": "Desktop website section",
+            "hr": "Dio web stranice na računalu"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/fti-consulting/web3.webp",
+          "alt": {
+            "en": "Responsive website detail",
+            "hr": "Detalj responzivne web stranice"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "apartmani-lzt",
+      "interface-concept",
+      "digital-experience"
+    ]
+  },
+  {
+    "id": "gimn-klub",
+    "published": true,
+    "priority": 60,
+    "featured": true,
+    "accent": "#84bcf5",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Gimnastic club",
+      "hr": "Gimnastički klub"
+    },
+    "category": "branding",
+    "categoryLabel": {
+      "en": "Branding / Logos",
+      "hr": "Brending / Logotipi"
+    },
+    "year": 2026,
+    "intro": {
+      "en": "A concept for both a symbol and a logo designed to stay recognizable across very different formats.",
+      "hr": "Koncept simbola i logotipa dizajniran da ostane prepoznatljiv u vrlo različitim formatima."
+    },
+    "summary": {
+      "en": "A flexible visual identity built to remain clear across different color combinations, print and digital applications.",
+      "hr": "Fleksibilan vizualni identitet dizajniran da ostane jasan u različitim kombinacijama boja, tisku i digitalnim primjenama."
+    },
+    "client": {
+      "en": "Gimnastic club",
+      "hr": "Gimnastički klub"
+    },
+    "role": {
+      "en": "Logo, brand identity and art direction",
+      "hr": "Logo, vizualni identitet i art direkcija"
+    },
+    "services": {
+      "en": [
+        "Strategy",
+        "Visual identity",
+        "Art direction"
+      ],
+      "hr": [
+        "Strategija",
+        "Vizualni identitet",
+        "Art direkcija"
+      ]
+    },
+    "problem": {
+      "en": "To design a flexible and unique visual identity that will remain clear and recognizable across many different applications.",
+      "hr": "Dizajnirati fleksibilan i jedinstven vizualni identitet koji će ostati jasan i prepoznatljiv u mnogim različitim primjenama."
+    },
+    "solution": {
+      "en": "A simple and minimalistic yet clean and memorable visual identity that uses a flexible color palette and clear typography.",
+      "hr": "Jednostavan i minimalistički, a opet čist i pamtljiv vizualni identitet koji koristi fleksibilnu paletu boja i jasnu tipografiju."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/gimn-klub/thumbnail.webp",
+        "alt": {
+          "en": "Placeholder for a branding project",
+          "hr": "Rezervirano mjesto za projekt vizualnog identiteta"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/gimn-klub/hero.webp",
+        "alt": {
+          "en": "Placeholder for a branding project",
+          "hr": "Rezervirano mjesto za projekt vizualnog identiteta"
+        }
+      },
+      "social": "assets/images/projects/gimn-klub/social.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/gimn-klub/web2.webp",
+          "alt": {
+            "en": "Identity presentation",
+            "hr": "Prezentacija vizualnog identiteta"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/projects/gimn-klub/web3.webp",
+          "alt": {
+            "en": "Printed identity application",
+            "hr": "Primjena identiteta u tisku"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/gimn-klub/web1.webp",
+          "alt": {
+            "en": "Packaging identity application",
+            "hr": "Primjena identiteta na ambalaži"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "editorial-project",
+      "packaging-concept",
+      "digital-experience"
+    ]
+  },
+  {
+    "id": "editorial-project",
+    "published": true,
+    "priority": 50,
+    "featured": true,
+    "accent": "#b0ac59",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Editorial Project",
+      "hr": "Urednički projekt"
+    },
+    "category": "print",
+    "categoryLabel": {
+      "en": "Print",
+      "hr": "Tisak"
+    },
+    "year": 2025,
+    "intro": {
+      "en": "A calm editorial structure for dense, information-rich content.",
+      "hr": "Miran urednički sustav za gust i sadržajno zahtjevan materijal."
+    },
+    "summary": {
+      "en": "An editorial system balancing dense information, visual hierarchy and a calm reading rhythm.",
+      "hr": "Urednički sustav koji usklađuje veliku količinu informacija, jasnu hijerarhiju i miran ritam čitanja."
+    },
+    "client": {
+      "en": "Editorial Client",
+      "hr": "Urednički klijent"
+    },
+    "role": {
+      "en": "Editorial design and layout",
+      "hr": "Urednički dizajn i prijelom"
+    },
+    "services": {
+      "en": [
+        "Editorial system",
+        "Typography",
+        "Print production"
+      ],
+      "hr": [
+        "Urednički sustav",
+        "Tipografija",
+        "Priprema za tisak"
+      ]
+    },
+    "problem": {
+      "en": "Describe the communication challenge here.",
+      "hr": "Ovdje opiši komunikacijski izazov."
+    },
+    "solution": {
+      "en": "Describe the layout system you created.",
+      "hr": "Ovdje opiši sustav prijeloma koji si izradio."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/hrv-zena/thumbnail.webp",
+        "alt": {
+          "en": "Placeholder for a print design project",
+          "hr": "Rezervirano mjesto za projekt tiskanog dizajna"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/hrv-zena/hero.webp",
+        "alt": {
+          "en": "Placeholder for a print design project",
+          "hr": "Rezervirano mjesto za projekt tiskanog dizajna"
+        }
+      },
+      "social": "assets/images/placeholders/print.svg",
+      "gallery": [
+        {
+          "src": "assets/images/placeholders/print.svg",
+          "alt": {
+            "en": "Editorial cover and spreads",
+            "hr": "Naslovnica i prijelomi publikacije"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/placeholders/branding.svg",
+          "alt": {
+            "en": "Editorial typography detail",
+            "hr": "Detalj uredničke tipografije"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/placeholders/web.svg",
+          "alt": {
+            "en": "Editorial system detail",
+            "hr": "Detalj uredničkog sustava"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "gimn-klub",
+      "digital-experience",
+      "packaging-concept"
+    ]
+  },
+  {
+    "id": "packaging-concept",
+    "published": true,
+    "priority": 40,
+    "featured": true,
+    "accent": "#4f8f80",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Packaging Concept",
+      "hr": "Koncept ambalaže"
+    },
+    "category": "packaging",
+    "categoryLabel": {
+      "en": "Packaging",
+      "hr": "Ambalaža"
+    },
+    "year": 2025,
+    "intro": {
+      "en": "A packaging direction built around clarity, material feel and confident shelf presence.",
+      "hr": "Smjer ambalaže izgrađen oko jasnoće, dojma materijala i snažne prisutnosti na polici."
+    },
+    "summary": {
+      "en": "A contemporary packaging direction focused on clarity, shelf presence and material character.",
+      "hr": "Suvremen smjer ambalaže usmjeren na jasnoću, prepoznatljivost na polici i karakter materijala."
+    },
+    "client": {
+      "en": "Product Brand",
+      "hr": "Brend proizvoda"
+    },
+    "role": {
+      "en": "Packaging design and art direction",
+      "hr": "Dizajn ambalaže i art direkcija"
+    },
+    "services": {
+      "en": [
+        "Packaging",
+        "Art direction",
+        "Photography"
+      ],
+      "hr": [
+        "Ambalaža",
+        "Art direkcija",
+        "Fotografija"
+      ]
+    },
+    "problem": {
+      "en": "Describe the product and market need.",
+      "hr": "Ovdje opiši proizvod i tržišnu potrebu."
+    },
+    "solution": {
+      "en": "Describe the packaging decisions.",
+      "hr": "Ovdje opiši odluke vezane uz ambalažu."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/placeholders/packaging.svg",
+        "alt": {
+          "en": "Placeholder for a packaging project",
+          "hr": "Rezervirano mjesto za projekt ambalaže"
+        }
+      },
+      "hero": {
+        "src": "assets/images/placeholders/packaging.svg",
+        "alt": {
+          "en": "Placeholder for a packaging project",
+          "hr": "Rezervirano mjesto za projekt ambalaže"
+        }
+      },
+      "social": "assets/images/placeholders/packaging.svg",
+      "gallery": [
+        {
+          "src": "assets/images/placeholders/packaging.svg",
+          "alt": {
+            "en": "Packaging hero image",
+            "hr": "Glavna fotografija ambalaže"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/placeholders/street.svg",
+          "alt": {
+            "en": "Packaging detail photograph",
+            "hr": "Fotografija detalja ambalaže"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/placeholders/branding.svg",
+          "alt": {
+            "en": "Packaging identity system",
+            "hr": "Sustav identiteta ambalaže"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "gimn-klub",
+      "editorial-project",
+      "social-campaign"
+    ]
+  },
+  {
+    "id": "digital-experience",
+    "published": true,
+    "priority": 30,
+    "featured": true,
+    "accent": "#4d82ba",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Digital Experience",
+      "hr": "Digitalno iskustvo"
+    },
+    "category": "web",
+    "categoryLabel": {
+      "en": "Web",
+      "hr": "Web"
+    },
+    "year": 2025,
+    "intro": {
+      "en": "A focused interface that prioritizes content, clarity and frictionless navigation.",
+      "hr": "Usmjereno sučelje koje daje prednost sadržaju, jasnoći i jednostavnoj navigaciji."
+    },
+    "summary": {
+      "en": "A focused digital experience shaped around useful content, direct navigation and responsive behavior.",
+      "hr": "Usmjereno digitalno iskustvo oblikovano oko korisnog sadržaja, izravne navigacije i responzivnog ponašanja."
+    },
+    "client": {
+      "en": "Digital Product",
+      "hr": "Digitalni proizvod"
+    },
+    "role": {
+      "en": "Web design and UI direction",
+      "hr": "Web dizajn i UI smjer"
+    },
+    "services": {
+      "en": [
+        "UX structure",
+        "UI design",
+        "Responsive design"
+      ],
+      "hr": [
+        "UX struktura",
+        "UI dizajn",
+        "Responzivni dizajn"
+      ]
+    },
+    "problem": {
+      "en": "Describe the user or business problem.",
+      "hr": "Ovdje opiši korisnički ili poslovni problem."
+    },
+    "solution": {
+      "en": "Describe the interface and system you designed.",
+      "hr": "Ovdje opiši sučelje i sustav koji si dizajnirao."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/placeholders/web.svg",
+        "alt": {
+          "en": "Placeholder for a web design project",
+          "hr": "Rezervirano mjesto za projekt web dizajna"
+        }
+      },
+      "hero": {
+        "src": "assets/images/placeholders/web.svg",
+        "alt": {
+          "en": "Placeholder for a web design project",
+          "hr": "Rezervirano mjesto za projekt web dizajna"
+        }
+      },
+      "social": "assets/images/placeholders/web.svg",
+      "gallery": [
+        {
+          "src": "assets/images/placeholders/web.svg",
+          "alt": {
+            "en": "Website presentation",
+            "hr": "Prezentacija web stranice"
+          },
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/placeholders/ui.svg",
+          "alt": {
+            "en": "Interface component detail",
+            "hr": "Detalj komponente sučelja"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/placeholders/social.svg",
+          "alt": {
+            "en": "Responsive digital system",
+            "hr": "Responzivni digitalni sustav"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "interface-concept",
+      "gimn-klub",
+      "editorial-project"
+    ]
+  },
+  {
+    "id": "social-campaign",
+    "published": true,
+    "priority": 20,
+    "featured": false,
+    "accent": "#be6282",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Social Campaign",
+      "hr": "Kampanja za društvene mreže"
+    },
+    "category": "social",
+    "categoryLabel": {
+      "en": "Social Media",
+      "hr": "Društvene mreže"
+    },
+    "year": 2025,
+    "intro": {
+      "en": "A flexible campaign designed for repeatable, recognizable communication.",
+      "hr": "Fleksibilna kampanja za ponovljivu i prepoznatljivu komunikaciju."
+    },
+    "summary": {
+      "en": "A modular campaign system.",
+      "hr": "Modularni sustav kampanje."
+    },
+    "client": {
+      "en": "Campaign Client",
+      "hr": "Klijent kampanje"
+    },
+    "role": {
+      "en": "Campaign design",
+      "hr": "Dizajn kampanje"
+    },
+    "services": {
+      "en": [
+        "Campaign system",
+        "Social assets"
+      ],
+      "hr": [
+        "Sustav kampanje",
+        "Objave za društvene mreže"
+      ]
+    },
+    "problem": {
+      "en": "",
+      "hr": ""
+    },
+    "solution": {
+      "en": "",
+      "hr": ""
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/placeholders/social.svg",
+        "alt": {
+          "en": "Placeholder for a social media campaign",
+          "hr": "Rezervirano mjesto za kampanju na društvenim mrežama"
+        }
+      },
+      "hero": {
+        "src": "assets/images/placeholders/social.svg",
+        "alt": {
+          "en": "Placeholder for a social media campaign",
+          "hr": "Rezervirano mjesto za kampanju na društvenim mrežama"
+        }
+      },
+      "social": "assets/images/placeholders/social.svg",
+      "gallery": [
+        {
+          "src": "assets/images/placeholders/social.svg",
+          "alt": {
+            "en": "Campaign assets",
+            "hr": "Materijali kampanje"
+          },
+          "size": "wide"
+        }
+      ]
+    },
+    "related": [
+      "packaging-concept",
+      "digital-experience",
+      "gimn-klub"
+    ]
+  },
+  {
+    "id": "interface-concept",
+    "published": true,
+    "priority": 10,
+    "featured": false,
+    "accent": "#7f8796",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Interface Concept",
+      "hr": "Koncept sučelja"
+    },
+    "category": "ui",
+    "categoryLabel": {
+      "en": "UI",
+      "hr": "UI"
+    },
+    "year": 2024,
+    "intro": {
+      "en": "A structured interface concept focused on consistency and ease of use.",
+      "hr": "Strukturiran koncept sučelja usmjeren na dosljednost i jednostavnost korištenja."
+    },
+    "summary": {
+      "en": "A clear, structured interface concept.",
+      "hr": "Jasan i strukturiran koncept sučelja."
+    },
+    "client": {
+      "en": "Product Concept",
+      "hr": "Koncept proizvoda"
+    },
+    "role": {
+      "en": "Interface design",
+      "hr": "Dizajn sučelja"
+    },
+    "services": {
+      "en": [
+        "UI design",
+        "Design system"
+      ],
+      "hr": [
+        "UI dizajn",
+        "Sustav dizajna"
+      ]
+    },
+    "problem": {
+      "en": "",
+      "hr": ""
+    },
+    "solution": {
+      "en": "",
+      "hr": ""
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/placeholders/ui.svg",
+        "alt": {
+          "en": "Placeholder for a UI design project",
+          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+        }
+      },
+      "hero": {
+        "src": "assets/images/placeholders/ui.svg",
+        "alt": {
+          "en": "Placeholder for a UI design project",
+          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+        }
+      },
+      "social": "assets/images/placeholders/ui.svg",
+      "gallery": [
+        {
+          "src": "assets/images/placeholders/ui.svg",
+          "alt": {
+            "en": "Interface concept",
+            "hr": "Koncept sučelja"
+          },
+          "size": "wide"
+        }
+      ]
+    },
+    "related": [
+      "digital-experience",
+      "editorial-project",
+      "social-campaign"
+    ]
+  }
+]

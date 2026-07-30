@@ -1,0 +1,31 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --bg: #f3f3f1;
+  --surface: #ffffff;
+  --surface-raised: #fafaf8;
+  --text: #111112;
+  --text-muted: #67676b;
+  --border: rgba(17, 17, 18, 0.14);
+  --overlay: rgba(8, 8, 9, 0.66);
+  --header: rgba(243, 243, 241, 0.78);
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --container: 1440px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --section-space: clamp(96px, 13vw, 200px);
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --transition-fast: 180ms var(--ease);
+  --transition: 420ms var(--ease);
+}
+
+html[data-theme="dark"] {
+  --bg: #181818;
+  --surface: #171718;
+  --surface-raised: #1e1e20;
+  --text: #f5f5f2;
+  --text-muted: #a4a4a8;
+  --border: rgba(245, 245, 242, 0.15);
+  --overlay: rgba(5, 5, 6, 0.62);
+  --header: rgba(15, 15, 16, 0.76);
+}

@@ -1,0 +1,99 @@
+{
+  "id": "website-project-name",
+  "published": true,
+  "priority": 90,
+  "featured": true,
+  "type": "website",
+  "liveUrl": "https://replace-this.example",
+  "accent": "#6487d9",
+  "accentTheme": "dark",
+  "title": {
+    "en": "Website Project Name",
+    "hr": "Naziv web projekta"
+  },
+  "category": "web",
+  "categoryLabel": {
+    "en": "Web Design",
+    "hr": "Web dizajn"
+  },
+  "year": 2026,
+  "intro": {
+    "en": "A responsive website built around clarity, speed and a strong visual hierarchy.",
+    "hr": "Responzivna web stranica oblikovana oko jasnoće, brzine i snažne vizualne hijerarhije."
+  },
+  "summary": {
+    "en": "A modern website designed to present the client's services clearly across desktop and mobile.",
+    "hr": "Moderna web stranica osmišljena za jasno predstavljanje usluga klijenta na računalu i mobitelu."
+  },
+  "client": {
+    "en": "Client Name",
+    "hr": "Naziv klijenta"
+  },
+  "role": {
+    "en": "Web design and front-end development",
+    "hr": "Web dizajn i front-end razvoj"
+  },
+  "services": {
+    "en": [
+      "UX/UI Design",
+      "Front-end Development",
+      "Responsive Design"
+    ],
+    "hr": [
+      "UX/UI dizajn",
+      "Front-end razvoj",
+      "Responzivni dizajn"
+    ]
+  },
+  "problem": {
+    "en": "Replace this with the original website problem, business goal or usability challenge.",
+    "hr": "Zamijeni ovo izvornim problemom web stranice, poslovnim ciljem ili izazovom uporabljivosti."
+  },
+  "solution": {
+    "en": "Replace this with your design approach, important decisions and the final result.",
+    "hr": "Zamijeni ovo svojim pristupom dizajnu, važnim odlukama i završnim rezultatom."
+  },
+  "images": {
+    "thumbnail": {
+      "src": "assets/images/projects/website-project-name/thumbnail.webp",
+      "alt": {
+        "en": "Website project thumbnail",
+        "hr": "Naslovna slika web projekta"
+      }
+    },
+    "hero": {
+      "src": "assets/images/projects/website-project-name/hero.webp",
+      "alt": {
+        "en": "Full website presentation",
+        "hr": "Prezentacija web stranice"
+      }
+    },
+    "social": "assets/images/projects/website-project-name/social.webp",
+    "gallery": [
+      {
+        "src": "assets/images/projects/website-project-name/01-desktop.webp",
+        "alt": {
+          "en": "Full desktop website screenshot",
+          "hr": "Cijeli prikaz web stranice na računalu"
+        },
+        "size": "wide"
+      },
+      {
+        "src": "assets/images/projects/website-project-name/02-mobile.webp",
+        "alt": {
+          "en": "Mobile website screens",
+          "hr": "Mobilni prikazi web stranice"
+        },
+        "size": "half"
+      },
+      {
+        "src": "assets/images/projects/website-project-name/03-detail.webp",
+        "alt": {
+          "en": "Website interface detail",
+          "hr": "Detalj sučelja web stranice"
+        },
+        "size": "half"
+      }
+    ]
+  }
+}
