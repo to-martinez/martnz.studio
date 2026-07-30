@@ -41,20 +41,61 @@ async function readJson(file) {
 }
 
 function validateProjects(items) {
-  if (!Array.isArray(items)) throw new Error("data/projects.json must contain a JSON array.");
+  if (!Array.isArray(items)) {
+    throw new Error("data/projects.json must contain a JSON array.");
+  }
+
   const ids = new Set();
+
   for (const [index, project] of items.entries()) {
     const label = project.id || `project at index ${index}`;
-    for (const field of ["id", "title", "categories", "categoryLabel", "summary", "images"]) {
-      if (!project[field]) throw new Error(`${label} is missing required field: ${field}`);
+
+    for (const field of ["id", "title", "categories", "summary", "images"]) {
+      if (!project[field]) {
+        throw new Error(`${label} is missing required field: ${field}`);
+      }
     }
+
+    if (
+      !Array.isArray(project.categories) ||
+      project.categories.length === 0
+    ) {
+      throw new Error(
+        `${label}: categories must be a non-empty array.`
+      );
+    }
+
+    if (
+      project.categories.some(
+        category =>
+          typeof category !== "string" ||
+          category.trim() === ""
+      )
+    ) {
+      throw new Error(
+        `${label}: every category must be a non-empty string.`
+      );
+    }
+
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id)) {
-      throw new Error(`${label}: id must use lowercase letters, numbers and hyphens only.`);
+      throw new Error(
+        `${label}: id must use lowercase letters, numbers and hyphens only.`
+      );
     }
-    if (ids.has(project.id)) throw new Error(`Duplicate project id: ${project.id}`);
+
+    if (ids.has(project.id)) {
+      throw new Error(`Duplicate project id: ${project.id}`);
+    }
+
     ids.add(project.id);
-    if (!project.images.thumbnail?.src) throw new Error(`${label} is missing images.thumbnail.src`);
-    if (!project.images.hero?.src) throw new Error(`${label} is missing images.hero.src`);
+
+    if (!project.images.thumbnail?.src) {
+      throw new Error(`${label} is missing images.thumbnail.src`);
+    }
+
+    if (!project.images.hero?.src) {
+      throw new Error(`${label} is missing images.hero.src`);
+    }
   }
 }
 
