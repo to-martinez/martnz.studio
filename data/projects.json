@@ -97,7 +97,7 @@
   {
     "id": "gimn-klub",
     "published": true,
-    "priority": 60,
+    "priority": 56,
     "featured": false,
     "accent": "#84bcf5",
     "accentTheme": "dark",
@@ -195,7 +195,7 @@
   {
     "id": "knjiga-hrv-zena",
     "published": true,
-    "priority": 75,
+    "priority": 85,
     "featuredPriority": 80,
 
     "featured": true,
@@ -295,7 +295,7 @@
   {
     "id": "fti-consulting",
     "published": true,
-    "priority": 76,
+    "priority": 57,
     "featuredPriority": 90,
     "featured": true,
     "type": "website",
@@ -488,7 +488,7 @@
   {
     "id": "zinf",
     "published": true,
-    "priority": 30,
+    "priority": 10,
     "featuredPriority": 60,
     "featured": false,
     "accent": "#bd4763",
@@ -709,7 +709,7 @@
   },
   {
     "id": "interface-concept",
-    "published": true,
+    "published": false,
     "priority": 10,
     "featured": false,
     "accent": "#7f8796",
