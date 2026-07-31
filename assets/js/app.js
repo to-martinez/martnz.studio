@@ -56,8 +56,7 @@ const translations = {
     "nav.contact": "Contact",
     "hero.eyebrow": "Independent creative portfolio",
     "hero.role": "Graphic Designer & Photographer",
-    "hero.intro": "Selected visual identities, web design work, digital work, print design and photography."
-,
+    "hero.intro": "Selected visual identities, web design work, digital work, print design and photography.",
     "hero.cta": "Explore selected work",
     "featured.eyebrow": "Featured projects",
     "featured.title": "A few projects worth starting with.",
@@ -70,7 +69,7 @@ const translations = {
     "photo.wedding": "Wedding",
     "photo.street": "Street & portrait",
     "photo.open": "Open image",
-    "about.eyebrow": "About",
+    "about.eyebrow": "About me",
     "about.title": "Hi, I'm Tomislav!",
     "about.placeholder": "I'm a passionate graphic designer and photographer based in Croatia. I'm driven by creativity, attention to detail, and a desire to create intriguing and unique work.",
     "about.placeholder2": "As a fast learner and problem-solver, I thrive in dynamic environments and enjoy tackling complex challenges.",
@@ -605,13 +604,19 @@ function createPhotoGallery(gallery) {
       button.append(remainingLabel);
     }
 
-    const extraLabel = isLastPreview
-      ? `, ${remainingCount} more photographs`
-      : "";
-
     button.setAttribute(
       "aria-label",
-      `${galleryTitle}, preview ${index + 1}${extraLabel}`
+      isLastPreview
+        ? `${localized({
+            en: "Open all photographs",
+            hr: "Otvori sve fotografije"
+          })}: ${galleryTitle}`
+        : `${galleryTitle}, ${
+            localized({
+              en: "preview",
+              hr: "pregled"
+            })
+          } ${index + 1}`
     );
 
     button.addEventListener("click", () => {

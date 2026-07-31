@@ -703,11 +703,14 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
 }
 .about-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.15fr) minmax(12rem, 18rem) minmax(0, 1.5fr);
-  gap: clamp(1.5rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 0.15fr) minmax(14em, 22rem) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
   align-items: start;
 }
-
+.about-content h2 {
+  font-size: clamp(3rem, 5vw, 5.25rem);
+  line-height: 0.98;
+}
 .about-photo {
   margin: 0;
   overflow: hidden;
@@ -719,6 +722,11 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   width: 100%;
   aspect-ratio: 5 / 6;
   object-fit: cover;
+}
+
+.about-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
 

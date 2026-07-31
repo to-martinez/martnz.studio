@@ -1,10 +1,10 @@
 [
   {
     "id": "wedding",
-    "priority": 20,
+    "priority": 30,
     "published": true,
     "title": {
-      "en": "Wedding",
+      "en": "Wedding Photography",
       "hr": "Vjenčanja"
     },
     "coverIndex": 0,
@@ -68,19 +68,19 @@
       {
         "src": "assets/images/photography/wedding/09.webp",
         "alt": {
-          "en": "Newlyweds on the morning after",
-          "hr": "Vjenčani par sljedeće jutro"
+          "en": "Bride and groom on the hotel stairs",
+          "hr": "Vjenčani par na stepenicama hotela"
         }
       }
     ]
   },
   {
-    "id": "street-portrait",
-    "priority": 10,
+    "id": "street",
+    "priority": 20,
     "published": true,
     "title": {
-      "en": "Street & Portrait",
-      "hr": "Ulična i portretna"
+      "en": "Street Photography",
+      "hr": "Ulična fotografija" 
     },
     "coverIndex": 0,
     "images": [
@@ -149,6 +149,53 @@
       },
       {
         "src": "assets/images/photography/street/10.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      }
+    ]
+  },
+  {
+    "id": "portrait",
+    "priority": 10,
+    "published": true,
+    "title": {
+      "en": "Portraits & Couples",
+      "hr": "Potreti i parovi"
+    },
+    "coverIndex": 0,
+    "images": [
+      {
+        "src": "assets/images/photography/portrait/01.webp",
+        "alt": {
+          "en": "Bologna street and clock in natural light",
+          "hr": "Sat u ulici u Bolonji u prirodnom svjetlu"
+        }
+      },
+      {
+        "src": "assets/images/photography/portrait/02.webp",
+        "alt": {
+          "en": "People sitting on a curb",
+          "hr": "Ljudi sjede na pločniku"
+        }
+      },
+      {
+        "src": "assets/images/photography/portrait/03.webp",
+        "alt": {
+          "en": "Urban portrait",
+          "hr": "Urbani portret"
+        }
+      },
+      {
+        "src": "assets/images/photography/portrait/04.webp",
+        "alt": {
+          "en": "Quiet city moment",
+          "hr": "Tihi trenutak u gradu"
+        }
+      },
+      {
+        "src": "assets/images/photography/portrait/05.webp",
         "alt": {
           "en": "Portrait photographed outdoors",
           "hr": "Portret fotografiran na otvorenom"
