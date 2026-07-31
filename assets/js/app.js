@@ -56,7 +56,7 @@ const translations = {
     "nav.contact": "Contact",
     "hero.eyebrow": "Independent creative portfolio",
     "hero.role": "Graphic Designer & Photographer",
-    "hero.intro": "Selected visual identities, web design work, digital work, print design and photography.",
+    "hero.intro": "Independent graphic designer and photographer based in Croatia.",
     "hero.cta": "Explore selected work",
     "featured.eyebrow": "Featured projects",
     "featured.title": "A few projects worth starting with.",
@@ -152,6 +152,21 @@ function updateHomepageSeo() {
     language: state.language
   });
   updatePersonSchema(site, state.language);
+}
+
+function setupImageFadeIn(root = document) {
+  root.querySelectorAll("img:not(.is-loaded)").forEach(image => {
+    const reveal = () => {
+      image.classList.add("is-loaded");
+    };
+
+    if (image.complete && image.naturalWidth > 0) {
+      reveal();
+    } else {
+      image.addEventListener("load", reveal, { once: true });
+      image.addEventListener("error", reveal, { once: true });
+    }
+  });
 }
 
 function applyLanguage() {
@@ -377,6 +392,7 @@ function renderProjects() {
     ...projects.map(createWorkCard)
   );
 
+  setupImageFadeIn();
   observeReveals();
 }
 
@@ -536,6 +552,7 @@ function renderPhotography() {
 
   container.replaceChildren(...galleryElements);
 
+  setupImageFadeIn(container);
   observeReveals();
 }
 
