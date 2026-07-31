@@ -24,8 +24,8 @@ const categoryLabels = {
     hr: "Uredništvo"
   },
   branding: {
-    en: "Branding",
-    hr: "Brendiranje"
+    en: "Logo/Branding",
+    hr: "Logotip/Brendiranje"
   },
   web: {
     en: "Web Design",

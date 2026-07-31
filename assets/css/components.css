@@ -726,4 +726,10 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   .about-content {
     width: 100%;
   }
+  .project-grid {
+    columns: 2;
+    column-gap: clamp(16px, 2.5vw, 26px);
+  }
+  .work-card:nth-child(3n + 2) .work-card-media { aspect-ratio: 3 / 5; }
+
 }

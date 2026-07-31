@@ -99,7 +99,7 @@
     "published": true,
     "priority": 56,
     "featured": false,
-    "accent": "#84bcf5",
+    "accent": "#e8ae00",
     "accentTheme": "dark",
     "title": {
       "en": "Gimnastic club",
@@ -615,7 +615,7 @@
     "published": true,
     "priority": 20,
     "featuredPriority": 70,
-    "featured": true,
+    "featured": false,
     "accent": "#6aa1bd",
     "accentTheme": "dark",
     "title": {
@@ -704,7 +704,7 @@
     "published": true,
     "priority": 10,
     "featured": false,
-    "accent": "#7f8796",
+    "accent": "#4767b0",
     "accentTheme": "dark",
     "title": {
       "en": "Euromilk Van Liveries",
@@ -717,8 +717,8 @@
       "hr": "Dizajn reklamnih folije za kombi vozila."
     },
     "summary": {
-      "en": "A modern and attention grabbing vehicle livery applied to a Volkswagen ID.3.",
-      "hr": "Moderna i privlačna reklamna folija primijenjena na Volkswagen ID.3."
+      "en": "A cohesieve and appropriate vehicle livery design based on the brands line of work.",
+      "hr": "Kohezivan i primjeren dizajn reklamne folije za vozilo temeljen na djelatnosti brenda."
     },
     "client": {
       "en": "Euromilk",
@@ -797,6 +797,92 @@
         },
         {
           "src": "assets/images/projects/euromilk-kombi/web5.webp",
+          "alt": {
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "zinf",
+      "knjiga-hrv-zena",
+      "hotel-vitar"
+    ]
+  },
+  {
+    "id": "dukat-oglasi",
+    "published": true,
+    "priority": 5,
+    "featured": true,
+    "accent": "#a5c57f",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Digital/Print Advertisements",
+      "hr": "Digitalni/tiskani oglasi"
+    },
+    "categories": ["print", "social"],
+    "year": 2025,
+    "intro": {
+      "en": "Design of several digital advertisements for the Dukat brand, based on their existing visual identity.",
+      "hr": "Dizajn nekoliko digitalnih reklama za brend Dukat, temeljen na njihovom postojećem vizualnom identitetu."
+    },
+    "summary": {
+      "en": "A series of advertisements designed to be visually appealing and work both in a variety of formats",
+      "hr": "Serija oglasa osmišljenih tako da budu vizualno privlačni i funkcionalni u različitim formatima."
+    },
+    "client": {
+      "en": "Dukat",
+      "hr": "Dukat"
+    },
+    "role": {
+      "en": "Graphic designer @ F.I.L.-ART",
+      "hr": "Grafički dizajner @ F.I.L.-ART"
+    },
+    "services": {
+      "en": [
+        "Graphic design"
+      ],
+      "hr": [
+        "Grafički dizajn"
+      ]
+    },
+    "problem": {
+      "en": "",
+      "hr": ""
+    },
+    "solution": {
+      "en": "",
+      "hr": ""
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/dukat-oglasi/thumbnail.webp",
+        "alt": {
+          "en": "Placeholder for a UI design project",
+          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/dukat-oglasi/hero.webp",
+        "alt": {
+          "en": "Placeholder for a UI design project",
+          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+        }
+      },
+      "social": "assets/images/placeholders/ui.svg",
+      "gallery": [
+        {
+          "src": "assets/images/projects/dukat-oglasi/dukat1.webp",
+          "alt": {
+            "en": "Vehicle livery design",
+            "hr": "Dizajn reklamne folije vozila"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/dukat-oglasi/dukat2.webp",
           "alt": {
             "en": "Vehicle livery design",
             "hr": "Dizajn reklamne folije vozila"
