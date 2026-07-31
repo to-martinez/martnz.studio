@@ -4,6 +4,7 @@ import {
   projectImage,
   projectUrl
 } from "./data.js";
+import { createLightbox, itemsFromTriggers } from "./lightbox.js";
 import { updatePersonSchema, updateSeo } from "./seo.js";
 
 const state = {
@@ -163,7 +164,6 @@ function applyLanguage() {
   document.querySelector("[data-current-language]").textContent = state.language.toUpperCase();
   updateHomepageSeo();
   renderProjects();
-  renderPhotography();
   renderFilters();
 }
 
@@ -492,6 +492,15 @@ function setupHeader() {
   });
 }
 
+function setupLightbox() {
+  const triggers = document.querySelectorAll("[data-lightbox-src]");
+  const items = itemsFromTriggers(triggers);
+  const lightbox = createLightbox(document.querySelector("[data-lightbox]"), {
+    getLanguage: () => state.language
+  });
+  triggers.forEach((trigger, index) => trigger.addEventListener("click", () => lightbox?.open(items, index)));
+}
+
 function setupSiteData() {
   const email = document.querySelector("[data-contact-email]");
   email.href = `mailto:${site.email}`;
@@ -615,15 +624,6 @@ function createPhotoGallery(gallery) {
     );
 
     button.addEventListener("click", () => {
-      if (isLastPreview) {
-        openPhotoLightbox(
-          images,
-          PHOTO_PREVIEW_LIMIT,
-          galleryTitle
-        );
-        return;
-      }
-
       selectImage(index);
     });
 
@@ -738,148 +738,13 @@ function formatPhotoCount(count) {
   }`;
 }
 
-
-let activeLightboxImages = [];
-let activeLightboxIndex = 0;
-let activeLightboxGalleryTitle = "";
-let photoLightbox = null;
-
-function setupPhotoLightbox() {
-  if (photoLightbox) return;
-
-  const dialog = document.querySelector("[data-lightbox]");
-  const image = document.querySelector("[data-lightbox-image]");
-  const caption = document.querySelector("[data-lightbox-caption]");
-  const counter = document.querySelector("[data-lightbox-counter]");
-  const closeButton = document.querySelector("[data-lightbox-close]");
-  const previousButton = document.querySelector("[data-lightbox-previous]");
-  const nextButton = document.querySelector("[data-lightbox-next]");
-
-  if (
-    !dialog ||
-    !image ||
-    !caption ||
-    !counter ||
-    !closeButton ||
-    !previousButton ||
-    !nextButton
-  ) {
-    return;
-  }
-
-  photoLightbox = {
-    dialog,
-    image,
-    caption,
-    counter,
-    previousButton,
-    nextButton
-  };
-
-  closeButton.addEventListener("click", () => {
-    dialog.close();
-  });
-
-  previousButton.addEventListener("click", () => {
-    movePhotoLightbox(-1);
-  });
-
-  nextButton.addEventListener("click", () => {
-    movePhotoLightbox(1);
-  });
-
-  dialog.addEventListener("keydown", event => {
-    if (event.key === "ArrowLeft") {
-      event.preventDefault();
-      movePhotoLightbox(-1);
-    }
-
-    if (event.key === "ArrowRight") {
-      event.preventDefault();
-      movePhotoLightbox(1);
-    }
-  });
-
-  dialog.addEventListener("click", event => {
-    if (event.target === dialog) {
-      dialog.close();
-    }
-  });
-
-  dialog.addEventListener("close", () => {
-    activeLightboxImages = [];
-    activeLightboxIndex = 0;
-    activeLightboxGalleryTitle = "";
-    image.src = "";
-    image.alt = "";
-    caption.textContent = "";
-    counter.textContent = "";
-  });
-}
-
-function openPhotoLightbox(images, startingIndex, galleryTitle) {
-  setupPhotoLightbox();
-
-  if (!photoLightbox || !images.length) return;
-
-  activeLightboxImages = images;
-  activeLightboxIndex = startingIndex;
-  activeLightboxGalleryTitle = galleryTitle;
-
-  renderPhotoLightbox();
-
-  if (!photoLightbox.dialog.open) {
-    photoLightbox.dialog.showModal();
-  }
-}
-
-function movePhotoLightbox(direction) {
-  if (!activeLightboxImages.length) return;
-
-  activeLightboxIndex =
-    (
-      activeLightboxIndex +
-      direction +
-      activeLightboxImages.length
-    ) % activeLightboxImages.length;
-
-  renderPhotoLightbox();
-}
-
-function renderPhotoLightbox() {
-  if (!photoLightbox || !activeLightboxImages.length) return;
-
-  const currentPhoto = activeLightboxImages[activeLightboxIndex];
-
-  const alt =
-    localized(currentPhoto.alt) ||
-    `${activeLightboxGalleryTitle}, photograph ${activeLightboxIndex + 1}`;
-
-  photoLightbox.image.src = currentPhoto.src;
-  photoLightbox.image.alt = alt;
-  photoLightbox.image.style.objectPosition =
-    currentPhoto.position || "center";
-
-  photoLightbox.caption.textContent =
-    localized(currentPhoto.caption) || alt;
-
-  photoLightbox.counter.textContent =
-    `${activeLightboxIndex + 1} / ${activeLightboxImages.length}`;
-
-  const hasMultipleImages = activeLightboxImages.length > 1;
-
-  photoLightbox.previousButton.hidden = !hasMultipleImages;
-  photoLightbox.nextButton.hidden = !hasMultipleImages;
-  photoLightbox.counter.hidden = !hasMultipleImages;
-}
-
 async function init() {
-  ({ site, projects, featuredProjects, photoGalleries } = await loadPortfolioData());
+  ({ site, projects, featuredProjects } = await loadPortfolioData());
   document.querySelector("[data-current-year]").textContent = new Date().getFullYear();
   applyTheme();
   setupHeader();
   setupControls();
-  setupPhotoLightbox();
+  setupLightbox();
   setupSiteData();
   applyLanguage();
   observeReveals();

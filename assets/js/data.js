@@ -10,13 +10,22 @@ async function fetchJson(path) {
 }
 
 export async function loadPortfolioData() {
-  const [site, projects] = await Promise.all([
+  const [site, projects, photoGalleries] = await Promise.all([
     fetchJson("data/site.json"),
-    fetchJson("data/projects.json")
+    fetchJson("data/projects.json"),
+    fetchJson("data/photography.json")
   ]);
 
   if (!Array.isArray(projects)) {
-    throw new TypeError("data/projects.json must contain an array of projects.");
+    throw new TypeError(
+      "data/projects.json must contain an array of projects."
+    );
+  }
+
+  if (!Array.isArray(photoGalleries)) {
+    throw new TypeError(
+      "data/photography.json must contain an array of galleries."
+    );
   }
 
   const publishedProjects = projects.filter(
@@ -35,10 +44,19 @@ export async function loadPortfolioData() {
         (a.featuredPriority ?? a.priority ?? 0)
     );
 
+  const orderedPhotoGalleries = photoGalleries
+    .filter(gallery => gallery.published !== false)
+    .filter(gallery => Array.isArray(gallery.images))
+    .filter(gallery => gallery.images.length > 0)
+    .sort(
+      (a, b) => (b.priority ?? 0) - (a.priority ?? 0)
+    );
+
   return {
     site,
     projects: orderedProjects,
-    featuredProjects
+    featuredProjects,
+    photoGalleries: orderedPhotoGalleries
   };
 }
 

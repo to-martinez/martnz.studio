@@ -135,29 +135,12 @@
           </a>
         </div>
 
-        <div class="photo-preview" id="photography-grid">
-          <button class="photo-card photo-card-large reveal" type="button"
-            data-lightbox-src="assets/images/placeholders/wedding.svg"
-            data-lightbox-alt-en="Wedding photography placeholder"
-            data-lightbox-alt-hr="Rezervirano mjesto za fotografiju vjenčanja">
-            <img src="assets/images/placeholders/wedding.svg" alt="Wedding photography placeholder" loading="lazy">
-            <span class="photo-label">
-              <strong data-i18n="photo.wedding">Wedding</strong>
-              <small data-i18n="photo.open">Open image</small>
-            </span>
-          </button>
-
-          <button class="photo-card reveal" type="button"
-            data-lightbox-src="assets/images/placeholders/street.svg"
-            data-lightbox-alt-en="Street photography placeholder"
-            data-lightbox-alt-hr="Rezervirano mjesto za uličnu fotografiju">
-            <img src="assets/images/placeholders/street.svg" alt="Street photography placeholder" loading="lazy">
-            <span class="photo-label">
-              <strong data-i18n="photo.street">Street &amp; portrait</strong>
-              <small data-i18n="photo.open">Open image</small>
-            </span>
-          </button>
-        </div>
+        <div
+          class="photo-galleries"
+          id="photography-grid"
+          data-photo-galleries
+          aria-live="polite"
+        ></div>
       </div>
     </section>
 
@@ -199,14 +182,32 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-current-year></span> Tomislav Martinez</p>
+  <div class="container footer-inner">
+    <p>© <span data-current-year></span> Tomislav Martinez</p>
+
+    <nav class="footer-links" aria-label="Social links">
+      <a href="https://www.instagram.com/tomislavmartinezz/" class="text-link" target="blank">
+        <span>Instagram</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <a href="#" class="text-link inactive">
+        <span>LinkedIn</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <a href="#" class="text-link inactive">
+        <span>Behance</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
       <a href="#top" class="text-link">
         <span data-i18n="footer.back">Back to top</span>
         <span aria-hidden="true">↑</span>
       </a>
-    </div>
-  </footer>
+    </nav>
+  </div>
+</footer>
 
   <dialog class="lightbox" data-lightbox aria-label="Image viewer">
     <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image">×</button>

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "wedding",
+    "priority": 20,
+    "published": true,
+    "title": {
+      "en": "Wedding",
+      "hr": "Vjenčanja"
+    },
+    "coverIndex": 0,
+    "images": [
+      {
+        "src": "assets/images/photography/wedding/01.webp",
+        "alt": {
+          "en": "Wedding couple standing indoors",
+          "hr": "Vjenčani par na zatvorenom"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/02.webp",
+        "alt": {
+          "en": "Wedding ring on brides finger",
+          "hr": "Vjenčani prsten na mladenčinom prstu"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/03.webp",
+        "alt": {
+          "en": "Wedding couple and wedding cake",
+          "hr": "Vjenčani par i torta"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/04.webp",
+        "alt": {
+          "en": "The wedding rings",
+          "hr": "Vjenčano prstenje"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/05.webp",
+        "alt": {
+          "en": "Bride and groom eating the wedding cake",
+          "hr": "Mladenci jedu svadbenu tortu"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/06.webp",
+        "alt": {
+          "en": "Wedding couple spontanious",
+          "hr": "Spontana slika mladenaca"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/07.webp",
+        "alt": {
+          "en": "Detail of chamaigne glasses",
+          "hr": "Detalj čaša za šampanjac"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/08.webp",
+        "alt": {
+          "en": "Evening wedding celebration",
+          "hr": "Večernja svadbena proslava"
+        }
+      },
+      {
+        "src": "assets/images/photography/wedding/09.webp",
+        "alt": {
+          "en": "Newlyweds on the morning after",
+          "hr": "Vjenčani par sljedeće jutro"
+        }
+      }
+    ]
+  },
+  {
+    "id": "street-portrait",
+    "priority": 10,
+    "published": true,
+    "title": {
+      "en": "Street & Portrait",
+      "hr": "Ulična i portretna"
+    },
+    "coverIndex": 0,
+    "images": [
+      {
+        "src": "assets/images/photography/street/01.webp",
+        "alt": {
+          "en": "Bologna street and clock in natural light",
+          "hr": "Sat u ulici u Bolonji u prirodnom svjetlu"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/02.webp",
+        "alt": {
+          "en": "People sitting on a curb",
+          "hr": "Ljudi sjede na pločniku"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/03.webp",
+        "alt": {
+          "en": "Urban portrait",
+          "hr": "Urbani portret"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/04.webp",
+        "alt": {
+          "en": "Quiet city moment",
+          "hr": "Tihi trenutak u gradu"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/05.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/06.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/07.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/08.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/09.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      },
+      {
+        "src": "assets/images/photography/street/10.webp",
+        "alt": {
+          "en": "Portrait photographed outdoors",
+          "hr": "Portret fotografiran na otvorenom"
+        }
+      }
+    ]
+  }
+]
