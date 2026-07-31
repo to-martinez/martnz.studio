@@ -729,6 +729,30 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   gap: 1.5rem;
 }
 
+.work-card-media,
+.project-card-image,
+.photo-gallery-main,
+.gallery-item,
+.related-card-media {
+  background: var(--surface);
+}
+
+.work-card-media img,
+.project-card-image img,
+.photo-gallery-main img,
+.gallery-item img,
+.related-card-media img {
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.work-card-media img.is-loaded,
+.project-card-image img.is-loaded,
+.photo-gallery-main img.is-loaded,
+.gallery-item img.is-loaded,
+.related-card-media img.is-loaded {
+  opacity: 1;
+}
 
 .mobile-only { display: none; }
 
