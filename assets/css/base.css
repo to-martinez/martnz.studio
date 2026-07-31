@@ -5,20 +5,81 @@
 html {
   scroll-behavior: smooth;
   background: var(--bg);
+  
 }
+
 
 body {
   margin: 0;
   min-width: 320px;
+  min-height: 100vh;
   overflow-x: hidden;
-  background: var(--bg);
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(
+      ellipse 100% 78% at 8% 10%,
+      rgba(255, 202, 150, 0.06),
+      transparent 0%
+    ),
+    radial-gradient(
+      ellipse 92% 74% at 88% 8%,
+      rgba(255, 232, 199, 0.04),
+      transparent 3%
+    ),
+    radial-gradient(
+      ellipse 105% 82% at 78% 46%,
+      rgba(226, 218, 247, 0.055),
+      transparent 10%
+    ),
+    radial-gradient(
+      ellipse 98% 76% at 18% 62%,
+      rgba(221, 238, 225, 0.0),
+      transparent 0%
+    ),
+    radial-gradient(
+      ellipse 96% 72% at 86% 94%,
+      rgba(255, 216, 176, 0.015),
+      transparent 15%
+    ),
+    radial-gradient(
+      ellipse 88% 68% at 38% 98%,
+      rgba(238, 225, 207, 0.0),
+      transparent 10%
+    );
+
+  
+
+  background-size:
+    150% 150%,
+    148% 148%,
+    158% 158%,
+    152% 152%,
+    150% 150%,
+    145% 145%;
+
+  background-position:
+    0% 0%,
+    100% 0%,
+    100% 38%,
+    0% 58%,
+    100% 100%,
+    30% 100%;
+
+  background-repeat: no-repeat;
+  animation: ambient-background 90s ease-in-out infinite alternate;
+
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  transition: background-color var(--transition), color var(--transition);
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
 }
+
 
 body.menu-open { overflow: hidden; }
 
@@ -100,7 +161,78 @@ p { color: var(--text-muted); }
 
 .mobile-only { display: none; }
 
+@keyframes ambient-background {
+  from {
+    background-position:
+      0% 0%,
+      100% 0%,
+      100% 38%,
+      0% 58%,
+      100% 100%,
+      30% 100%;
+  }
+
+  to {
+    background-position:
+      14% 10%,
+      82% 14%,
+      70% 54%,
+      18% 70%,
+      78% 86%,
+      46% 82%;
+  }
+}
+
+html[data-theme="dark"] body {
+  background-image:
+    radial-gradient(
+      ellipse 100% 78% at 8% 10%,
+      rgba(255, 170, 105, 0.055),
+      transparent 0%
+    ),
+    radial-gradient(
+      ellipse 92% 74% at 88% 8%,
+      rgba(255, 205, 150, 0.040),
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse 105% 82% at 78% 46%,
+      rgba(147, 137, 221, 0.050),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 98% 76% at 18% 62%,
+      rgba(108, 154, 129, 0.040),
+      transparent 20%
+    ),
+    radial-gradient(
+      ellipse 96% 72% at 86% 94%,
+      rgba(255, 166, 105, 0.045),
+      transparent 97%
+    ),
+    radial-gradient(
+      ellipse 88% 68% at 38% 98%,
+      rgba(167, 136, 103, 0.035),
+      transparent 20%
+    );
+}
+
 @media (max-width: 760px) {
   .desktop-only { display: none !important; }
   .mobile-only { display: inline-flex; }
+
+  body {
+    background-size:
+      190% 165%,
+      180% 160%,
+      190% 175%,
+      180% 165%,
+      185% 165%,
+      170% 155%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body { animation: none; }
 }
