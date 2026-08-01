@@ -824,14 +824,14 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
 
 .work-card-media img,
 .project-card-image img,
-.photo-gallery-main img,{
+.photo-gallery-main img{
   opacity: 0;
   transition: opacity 220ms ease;
 }
 
 .work-card-media img.is-loaded,
 .project-card-image img.is-loaded,
-.photo-gallery-main img.is-loaded,{
+.photo-gallery-main img.is-loaded{
   opacity: 1;
 }
 
