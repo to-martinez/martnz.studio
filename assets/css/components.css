@@ -113,9 +113,9 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   z-index: 0;
 
   width: 75vw;
-  height: 75vw;
-  max-width: 2100px;
-  max-height: 2100px;
+  height: 55vw;
+  max-width: 1800px;
+  max-height: 1800px;
 
   top: -18vw;
   right: -30vw;
@@ -124,9 +124,9 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
 
   background: radial-gradient(
     circle,
-    rgba(255, 205, 115, 0.30) 0%,
-    rgba(255, 220, 165, 0.12) 55%,
-    rgba(255, 235, 205, 0.05) 98%,
+    rgba(255, 205, 115, 0.10) 0%,
+    rgba(255, 220, 165, 0.08) 40%,
+    rgba(255, 235, 205, 0.0) 100%,
     transparent 100%
   );
 
