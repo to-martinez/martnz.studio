@@ -6,8 +6,26 @@ import {
 } from "./data.js";
 import { updatePersonSchema, updateSeo } from "./seo.js";
 
+function getInitialLanguage() {
+  const savedLanguage = localStorage.getItem("portfolio-language");
+
+  if (savedLanguage === "en" || savedLanguage === "hr") {
+    return savedLanguage;
+  }
+
+  const browserLanguages = navigator.languages?.length
+    ? navigator.languages
+    : [navigator.language];
+
+  return browserLanguages.some(language =>
+    language?.toLowerCase().startsWith("hr")
+  )
+    ? "hr"
+    : "en";
+}
+
 const state = {
-  language: localStorage.getItem("portfolio-language") || "en",
+  language: getInitialLanguage(),
   theme: localStorage.getItem("portfolio-theme") ||
     (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"),
   filter: "all"
@@ -45,6 +63,10 @@ const categoryLabels = {
   vehicle: {
     en: "Vehicle Livery",
     hr: "Vozila"
+  },
+  window: {
+    en: "Window Graphics",
+    hr: "Izlog"
   }
 };
 
@@ -89,7 +111,7 @@ const translations = {
     "nav.photography": "Fotografija",
     "nav.about": "O meni",
     "nav.contact": "Kontakt",
-    "hero.eyebrow": "Samostalni kreativni portfolio",
+    "hero.eyebrow": "Kreativni portfolio",
     "hero.role": "Grafički dizajner i fotograf",
     "hero.intro": "Odabrani vizualni identiteti, digitalni projekti, tiskani materijali i fotografija.",
     "hero.cta": "Istraži odabrane radove",
@@ -167,12 +189,32 @@ function setupImageFadeIn(root = document) {
   });
 }
 
+function updateLanguageControl() {
+  const button = document.querySelector("[data-language-toggle]");
+  const targetLabel = document.querySelector("[data-language-target]");
+
+  if (!button || !targetLabel) return;
+
+  const targetLanguage = state.language === "hr" ? "en" : "hr";
+  const accessibleLabel = targetLanguage === "hr"
+    ? "Prebaci na hrvatski"
+    : "Switch to English";
+
+  targetLabel.textContent = targetLanguage.toUpperCase();
+  button.setAttribute("aria-label", accessibleLabel);
+  button.title = accessibleLabel;
+  button.lang = targetLanguage;
+}
+
 function applyLanguage() {
   document.documentElement.lang = state.language;
+  document.documentElement.dataset.language = state.language;
+
   document.querySelectorAll("[data-i18n]").forEach(element => {
     element.textContent = t(element.dataset.i18n);
   });
-  document.querySelector("[data-current-language]").textContent = state.language.toUpperCase();
+
+  updateLanguageControl();
   updateHomepageSeo();
   renderProjects();
   renderPhotography();

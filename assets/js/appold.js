@@ -46,6 +46,10 @@ const categoryLabels = {
   vehicle: {
     en: "Vehicle Livery",
     hr: "Vozila"
+  },
+  window: {
+    en: "Window Graphics",
+    hr: "Izlog"
   }
 };
 
