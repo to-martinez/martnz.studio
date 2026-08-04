@@ -3,26 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    (() => {
-      const savedLanguage = localStorage.getItem("portfolio-language");
-      const browserLanguages = navigator.languages?.length
-        ? navigator.languages
-        : [navigator.language];
-
-      const language =
-        savedLanguage === "en" || savedLanguage === "hr"
-          ? savedLanguage
-          : browserLanguages.some(value =>
-              value?.toLowerCase().startsWith("hr")
-            )
-            ? "hr"
-            : "en";
-
-      document.documentElement.lang = language;
-      document.documentElement.dataset.language = language;
-    })();
-  </script>
   <meta name="description" content="Portfolio of Tomislav Martinez, graphic designer and photographer.">
   <meta property="og:title" content="T. Martinez — Graphic Designer &amp; Photographer">
   <meta property="og:description" content="Portfolio of Tomislav Martinez, graphic designer and photographer.">
@@ -70,14 +50,8 @@
       </nav>
 
       <div class="header-actions">
-        <button
-          class="utility-button"
-          type="button"
-          data-language-toggle
-          aria-label="Prebaci na hrvatski"
-          title="Prebaci na hrvatski"
-        >
-          <span data-language-target>HR</span>
+        <button class="utility-button" type="button" data-language-toggle aria-label="Switch language">
+          <span data-current-language>EN</span>
         </button>
         <button class="utility-button theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
           <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">

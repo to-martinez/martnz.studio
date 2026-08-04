@@ -530,12 +530,12 @@
       ]
     },
     "problem": {
-      "en": "Describe the user or business problem.",
-      "hr": "Ovdje opiši korisnički ili poslovni problem."
+      "en": "Create a broshure, menu and social media templates that faithfully represent the wine bar",
+      "hr": "Kreiraj brošuru, jelovnik i predloške za društvene mreže koji vjernо predstavljaju vinski bar"
     },
     "solution": {
-      "en": "Describe the interface and system you designed.",
-      "hr": "Ovdje opiši sučelje i sustav koji si dizajnirao."
+      "en": "Develop a cohesive visual identity that captures the essence of the wine bar while ensuring all materials are consistent and professional.",
+      "hr": "Razvij koherentan vizualni identitet koji hvata suština vinskog bara dok se osigurava da svi materijali budu konzistentni i profesionalni."
     },
     "images": {
       "thumbnail": {
@@ -619,8 +619,8 @@
     "accent": "#6aa1bd",
     "accentTheme": "dark",
     "title": {
-      "en": "Hotel Vitar",
-      "hr": "Hotel Vitar"
+      "en": "Hotel Vitar Car Livery",
+      "hr": "Hotel Vitar Dizajn folije vozila"
     },
     "categories": ["print", "vehicle"],
     "year": 2025,
@@ -694,7 +694,7 @@
       ]
     },
     "related": [
-      "grill-cheese",
+      "euromilk-kombi",
       "zinf",
       "gimn-klub"
     ]
@@ -708,7 +708,7 @@
     "accentTheme": "dark",
     "title": {
       "en": "Euromilk Van Liveries",
-      "hr": "Euromilk dizajn Kombi vozila"
+      "hr": "Euromilk Dizajn folije vozila"
     },
     "categories": ["print", "vehicle"],
     "year": 2025,
@@ -895,6 +895,95 @@
       "zinf",
       "knjiga-hrv-zena",
       "hotel-vitar"
+    ]
+  },
+  {
+    "id": "hospitalija",
+    "published": true,
+    "priority": 2,
+    "featuredPriority": 60,
+    "featured": false,
+    "accent": "#40a1c3",
+    "accentTheme": "dark",
+    "title": {
+      "en": "Hospitalija Store Front",
+      "hr": "Hospitalija - Izlog"
+    },
+    "categories": ["print", "window"],
+    "year": 2025,
+    "intro": {
+      "en": "A new face for the Hospitalija store, designed to be inviting yet sterile.",
+      "hr": "Novi izgled izloga za trgovinu Hospitalija, dizajniran da bude privlačan, a opet sterilan."
+    },
+    "summary": {
+      "en": "Redesigned store front and window graphics for Hospitalija, a medical supply store.",
+      "hr": "Ponovno dizajnirani izlog trgovine i grafički elementi za Hospitalija, trgovina s medicinskim opremom."
+    },
+    "client": {
+      "en": "Hospitalija trgovina d.o.o.",
+      "hr": "Hospitalija trgovina d.o.o."
+    },
+    "role": {
+      "en": "Design and pre-press, @ F.I.L-Art",
+      "hr": "Dizajn i priprema za tisak, @ F.I.L-Art"
+    },
+    "services": {
+      "en": [
+        "Graphic design",
+        "Print production"
+      ],
+      "hr": [
+        "Grafički dizajn",
+        "Priprema za tisak"
+      ]
+    },
+    "problem": {
+      "en": "Redesinging a medical supply store front located in Ilica, Zagreb.",
+      "hr": "Redizajn izloga za trgovinu medicinskom opremom u Ilici, Zagreb."
+    },
+    "solution": {
+      "en": "Using original colors and branding to create a modernized and inviting store front that is still sterile and professional.",
+      "hr": "Koristeći originalne boje i brandiranje za stvaranje moderniziranog i privlačnog izloga koji je i dalje sterilan i profesionalan."
+    },
+    "images": {
+      "thumbnail": {
+        "src": "assets/images/projects/hospitalija/thumbnail.webp",
+        "alt": {
+          "en": "Hospitalija window graphics and store front design",
+          "hr": "Hospitalij dizajn izloga"
+        }
+      },
+      "hero": {
+        "src": "assets/images/projects/hospitalija/hero.webp",
+        "alt": {
+          "en": "Hospitalija window graphics and store front design",
+          "hr": "Hospitalija dizajn izloga"
+        }
+      },
+      "social": "assets/images/projects/hospitalija/social.webp",
+      "gallery": [
+        {
+          "src": "assets/images/projects/hospitalija/web1.webp",
+          "alt": {
+            "en": "Before picture of the store front",
+            "hr": "Prije redizajna izloga"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/hospitalija/web2.webp",
+          "alt": {
+            "en": "After picture of the store front",
+            "hr": "Nakon redizajna izloga"
+          },
+          "size": "half"
+        }
+      ]
+    },
+    "related": [
+      "euromilk-kombi",
+      "gimn-klub",
+      "knjiga-hrv-zena"
     ]
   }
 ]

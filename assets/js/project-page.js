@@ -8,8 +8,26 @@ import {
 import { createLightbox } from "./lightbox.js";
 import { updateSeo } from "./seo.js";
 
+function getInitialLanguage() {
+  const savedLanguage = localStorage.getItem("portfolio-language");
+
+  if (savedLanguage === "en" || savedLanguage === "hr") {
+    return savedLanguage;
+  }
+
+  const browserLanguages = navigator.languages?.length
+    ? navigator.languages
+    : [navigator.language];
+
+  return browserLanguages.some(language =>
+    language?.toLowerCase().startsWith("hr")
+  )
+    ? "hr"
+    : "en";
+}
+
 const state = {
-  language: localStorage.getItem("portfolio-language") || "en",
+  language: getInitialLanguage(),
   theme: localStorage.getItem("portfolio-theme") ||
     (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark")
 };
@@ -73,6 +91,32 @@ function applyTheme() {
   localStorage.setItem("portfolio-theme", state.theme);
 }
 
+function updateLanguageControl() {
+  const button = document.querySelector("[data-language-toggle]");
+  const targetLabel = document.querySelector("[data-language-target]");
+  const legacyLabel = document.querySelector("[data-current-language]");
+
+  if (!button) return;
+
+  const targetLanguage = state.language === "hr" ? "en" : "hr";
+  const accessibleLabel = targetLanguage === "hr"
+    ? "Prebaci na hrvatski"
+    : "Switch to English";
+
+  if (targetLabel) {
+    targetLabel.textContent = targetLanguage.toUpperCase();
+  }
+
+  // Keeps older project-page HTML working until its button markup is updated.
+  if (legacyLabel) {
+    legacyLabel.textContent = targetLanguage.toUpperCase();
+  }
+
+  button.setAttribute("aria-label", accessibleLabel);
+  button.title = accessibleLabel;
+  button.lang = targetLanguage;
+}
+
 function updateProjectSeo() {
   const title = `${localized(project.title)} — ${site.name}`;
   const hero = projectImage(project, "social");
@@ -89,12 +133,14 @@ function updateProjectSeo() {
 
 function renderProject() {
   document.documentElement.lang = state.language;
+  document.documentElement.dataset.language = state.language;
   document.documentElement.style.setProperty("--project-accent", project.accent || "#8f6fe8");
+
   document.querySelectorAll("[data-i18n]").forEach(element => {
     element.textContent = t(element.dataset.i18n);
   });
-  document.querySelector("[data-current-language]").textContent = state.language.toUpperCase();
 
+  updateLanguageControl();
   updateProjectSeo();
   document.querySelector("[data-project-title]").textContent = localized(project.title);
   document.querySelector("[data-project-category]").textContent = localized(project.categoryLabel);
