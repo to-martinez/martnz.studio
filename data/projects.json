@@ -365,15 +365,15 @@
       "thumbnail": {
         "src": "assets/images/projects/hrv-zena/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a print design project",
-          "hr": "Rezervirano mjesto za projekt tiskanog dizajna"
+          "en": "Monograph Thumbnail",
+          "hr": "Thumbnail monografije"
         }
       },
       "hero": {
         "src": "assets/images/projects/hrv-zena/hero.webp",
         "alt": {
-          "en": "Placeholder for a print design project",
-          "hr": "Rezervirano mjesto za projekt tiskanog dizajna"
+          "en": "Monograph Hero Image",
+          "hr": "Hero slika monografije"
         }
       },
       "social": "assets/images/projects/hrv-zena/social.webp",
@@ -381,33 +381,33 @@
         {
           "src": "assets/images/projects/hrv-zena/web2.webp",
           "alt": {
-            "en": "Editorial cover and spreads",
-            "hr": "Naslovnica i prijelomi publikacije"
+            "en": "Book spread mockup presentation",
+            "hr": "Prezentacija mockup-a rasporeda stranica knjige"
           },
           "size": "wide"
         },
         {
           "src": "assets/images/projects/hrv-zena/web1.webp",
           "alt": {
-            "en": "Editorial typography detail",
-            "hr": "Detalj uredničke tipografije"
+            "en": "Book cover mockup presentation",
+            "hr": "Prezentacija mockup-a naslovnice knjige"
           },
           "size": "wide"
         },
         {
           "src": "assets/images/projects/hrv-zena/web3.webp",
           "alt": {
-            "en": "Editorial system detail",
-            "hr": "Detalj uredničkog sustava"
+            "en": "Editorial system",
+            "hr": "Urednički sustav"
           },
           "size": "half"
         }
       ]
     },
     "related": [
-      "gimn-klub",
+      "grill-cheese",
       "zinf",
-      "grill-cheese"
+      "gkk"
     ]
   },
   {
@@ -468,15 +468,15 @@
       "thumbnail": {
         "src": "assets/images/projects/fti-consulting/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for website project two",
-          "hr": "Rezervirano mjesto za drugi web projekt"
+          "en": "FTI Consulting thumbnail",
+          "hr": "FTI Consulting thumbnail"
         }
       },
       "hero": {
         "src": "assets/images/projects/fti-consulting/hero.webp",
         "alt": {
-          "en": "Website interface presentation placeholder",
-          "hr": "Rezervirano mjesto za prezentaciju sučelja web stranice"
+          "en": "FTI Consulting hero image",
+          "hr": "FTI Consulting hero slika"
         }
       },
       "social": "assets/images/projects/fti-consulting/social.webp",
@@ -500,8 +500,8 @@
         {
           "src": "assets/images/projects/fti-consulting/web3.webp",
           "alt": {
-            "en": "Responsive website detail",
-            "hr": "Detalj responzivne web stranice"
+            "en": "Responsive mobile website",
+            "hr": "Responzivna web stranica za mobilne uređaje"
           },
           "size": "half"
         }
@@ -509,7 +509,7 @@
     },
     "related": [
       "apartmani-lzt",
-      "euromilk-kombi",
+      "blicpay",
       "zinf"
     ]
   },
@@ -566,15 +566,15 @@
       "thumbnail": {
         "src": "assets/images/projects/grill-cheese/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a packaging project",
-          "hr": "Rezervirano mjesto za projekt ambalaže"
+          "en": "Grill Cheese Packaging Thumbnail",
+          "hr": "Thumbnail ambalaže za grill sir"
         }
       },
       "hero": {
         "src": "assets/images/projects/grill-cheese/hero.webp",
         "alt": {
-          "en": "Placeholder for a packaging project",
-          "hr": "Rezervirano mjesto za projekt ambalaže"
+          "en": "Grill Cheese Packaging Hero Image",
+          "hr": "Hero slika ambalaže za grill sir"
         }
       },
       "social": "assets/images/placeholders/packaging.svg",
@@ -582,25 +582,25 @@
         {
           "src": "assets/images/projects/grill-cheese/web1.webp",
           "alt": {
-            "en": "Packaging hero image",
-            "hr": "Glavna fotografija ambalaže"
+            "en": "Grill Cheese Packaging Ad",
+            "hr": "Oglas za ambalažu grill sira"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/grill-cheese/web2.webp",
           "alt": {
-            "en": "Packaging detail photograph",
-            "hr": "Fotografija detalja ambalaže"
+            "en": "Product photography for grill cheese packaging",
+            "hr": "Fotografija proizvoda za ambalažu grill sira"
           },
           "size": "half"
         }
       ]
     },
     "related": [
-      "gimn-klub",
       "knjiga-hrv-zena",
-      "hotel-vitar"
+      "zinf",
+      "dukat-oglasi"
     ]
   },
   {
@@ -659,73 +659,73 @@
       "thumbnail": {
         "src": "assets/images/projects/zinf/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a web design project",
-          "hr": "Rezervirano mjesto za projekt web dizajna"
+          "en": "Zinfandel thumbnail",
+          "hr": "Zinfandel thumbnail"
         }
       },
       "hero": {
         "src": "assets/images/projects/zinf/hero.webp",
         "alt": {
-          "en": "Placeholder for a web design project",
-          "hr": "Rezervirano mjesto za projekt web dizajna"
+          "en": "Zinfandel hero image",
+          "hr": "Zinfandel hero slika"
         }
       },
       "social": "assets/images/projects/zinf/social.webp",
       "gallery": [
         {
-          "src": "assets/images/projects/zinf/web1.webp",
-          "alt": {
-            "en": "Website presentation",
-            "hr": "Prezentacija web stranice"
-          },
-          "size": "half"
-        },
-        {
           "src": "assets/images/projects/zinf/web2.webp",
           "alt": {
-            "en": "Interface component detail",
-            "hr": "Detalj komponente sučelja"
+            "en": "Zinfandel booklet outside pages",
+            "hr": "Vanjske stranice brošure Zinfandel"
           },
           "size": "half"
         },
         {
-          "src": "assets/images/projects/zinf/web3.webp",
+          "src": "assets/images/projects/zinf/web1.webp",
           "alt": {
-            "en": "Responsive digital system",
-            "hr": "Responzivni digitalni sustav"
-          },
-          "size": "half"
-        },
-        {
-          "src": "assets/images/projects/zinf/web4.webp",
-          "alt": {
-            "en": "Website presentation",
-            "hr": "Prezentacija web stranice"
-          },
-          "size": "half"
-        },
-        {
-          "src": "assets/images/projects/zinf/web5.webp",
-          "alt": {
-            "en": "Interface component detail",
-            "hr": "Detalj komponente sučelja"
+            "en": "Zinfandel booklet inside pages",
+            "hr": "Unutarnje stranice brošure Zinfandel"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/zinf/web6.webp",
           "alt": {
-            "en": "Responsive digital system",
-            "hr": "Responzivni digitalni sustav"
+            "en": "Zinfandel booklet test print",
+            "hr": "Test print brošure Zinfandel"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/zinf/web3.webp",
+          "alt": {
+            "en": "Zinfandel menu",
+            "hr": "Zinfandel jelovnik"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/zinf/web4.webp",
+          "alt": {
+            "en": "Zinfandel social media post template",
+            "hr": "Predložak objave za društvene mreže Zinfandel"
+          },
+          "size": "half"
+        },
+        {
+          "src": "assets/images/projects/zinf/web5.webp",
+          "alt": {
+            "en": "Zinfandel social media post template",
+            "hr": "Predložak objave za društvene mreže Zinfandel"
           },
           "size": "half"
         }
       ]
     },
     "related": [
-      "euromilk-kombi",
-      "gimn-klub",
-      "knjiga-hrv-zena"
+      "knjiga-hrv-zena",
+      "dukat-oglasi",
+      "grill-cheese"
     ]
   },
   {
@@ -780,15 +780,15 @@
       "thumbnail": {
         "src": "assets/images/projects/hotel-vitar/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a social media campaign",
-          "hr": "Rezervirano mjesto za kampanju na društvenim mrežama"
+          "en": "Hotel Vitar Car Livery Thumbnail",
+          "hr": "Thumbnail dizajna reklamne folije za automobil Hotel Vitar"
         }
       },
       "hero": {
         "src": "assets/images/projects/hotel-vitar/hero.webp",
         "alt": {
-          "en": "Placeholder for a social media campaign",
-          "hr": "Rezervirano mjesto za kampanju na društvenim mrežama"
+          "en": "Hotel Vitar Car Livery Hero Image",
+          "hr": "Glavna slika dizajna reklamne folije za automobil Hotel Vitar"
         }
       },
       "social": "assets/images/placeholders/social.svg",
@@ -813,8 +813,8 @@
     },
     "related": [
       "euromilk-kombi",
-      "zinf",
-      "gimn-klub"
+      "drvomont-kombi",
+      "gkk"
     ]
   },
   {
@@ -868,15 +868,15 @@
       "thumbnail": {
         "src": "assets/images/projects/euromilk-kombi/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a UI design project",
-          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+          "en": "Euromilk Van Liveries Thumbnail",
+          "hr": "Thumbnail dizajna reklamne folije za kombi vozila"
         }
       },
       "hero": {
         "src": "assets/images/projects/euromilk-kombi/hero.webp",
         "alt": {
-          "en": "Placeholder for a UI design project",
-          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+          "en": "Euromilk Van Liveries Hero Image",
+          "hr": "Glavna slika dizajna reklamne folije za kombi vozila"
         }
       },
       "social": "assets/images/placeholders/ui.svg",
@@ -884,49 +884,49 @@
         {
           "src": "assets/images/projects/euromilk-kombi/web1.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Vehicle livery open design file",
+            "hr": "Otvorena datoteka dizajna reklamne folije vozila"
           },
           "size": "wide"
         },
         {
           "src": "assets/images/projects/euromilk-kombi/web2.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Vehicle livery design result",
+            "hr": "Rezultat dizajna reklamne folije vozila"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/euromilk-kombi/web3.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Vehicle livery design result",
+            "hr": "Rezultat dizajna reklamne folije vozila"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/euromilk-kombi/web4.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Vehicle livery design result",
+            "hr": "Rezultat dizajna reklamne folije vozila"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/euromilk-kombi/web5.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Vehicle livery design result",
+            "hr": "Rezultat dizajna reklamne folije vozila"
           },
           "size": "half"
         }
       ]
     },
     "related": [
-      "zinf",
-      "knjiga-hrv-zena",
-      "hotel-vitar"
+      "drvomont-kombi",
+      "hotel-vitar",
+      "hospitalija"
     ]
   },
   {
@@ -978,15 +978,15 @@
       "thumbnail": {
         "src": "assets/images/projects/dukat-oglasi/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a UI design project",
-          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+          "en": "Dukat advertisement design thumbnail",
+          "hr": "Thumbnail dizajna reklama za Dukat"
         }
       },
       "hero": {
         "src": "assets/images/projects/dukat-oglasi/hero.webp",
         "alt": {
-          "en": "Placeholder for a UI design project",
-          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+          "en": "Dukat advertisement design hero image",
+          "hr": "Glavna slika dizajna reklama za Dukat"
         }
       },
       "social": "assets/images/placeholders/ui.svg",
@@ -994,16 +994,16 @@
         {
           "src": "assets/images/projects/dukat-oglasi/dukat1.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Dukat advertisement design result",
+            "hr": "Rezultat dizajna reklama za Dukat"
           },
           "size": "half"
         },
         {
           "src": "assets/images/projects/dukat-oglasi/dukat2.webp",
           "alt": {
-            "en": "Vehicle livery design",
-            "hr": "Dizajn reklamne folije vozila"
+            "en": "Dukat advertisement design result",
+            "hr": "Rezultat dizajna reklama za Dukat"
           },
           "size": "half"
         }
@@ -1011,8 +1011,8 @@
     },
     "related": [
       "zinf",
-      "knjiga-hrv-zena",
-      "hotel-vitar"
+      "gimn-klub",
+      "blicpay"
     ]
   },
   {
@@ -1067,15 +1067,15 @@
       "thumbnail": {
         "src": "assets/images/projects/hospitalija/thumbnail.webp",
         "alt": {
-          "en": "Hospitalija window graphics and store front design",
-          "hr": "Hospitalij dizajn izloga"
+          "en": "Hospitalija window graphics and store front design thumbnail",
+          "hr": "Hospitalija dizajn izloga thumbnail"
         }
       },
       "hero": {
         "src": "assets/images/projects/hospitalija/hero.webp",
         "alt": {
-          "en": "Hospitalija window graphics and store front design",
-          "hr": "Hospitalija dizajn izloga"
+          "en": "Hospitalija window graphics and store front design hero image",
+          "hr": "Hospitalija dizajn izloga glavna slika"
         }
       },
       "social": "assets/images/projects/hospitalija/social.webp",
@@ -1156,15 +1156,15 @@
       "thumbnail": {
         "src": "assets/images/projects/gkk/thumbnail.webp",
         "alt": {
-          "en": "City library Krapina window graphics and store front design",
+          "en": "City library Krapina window graphics and store front design thumbnail",
           "hr": "Gradska knjižnica Krapina dizajn izloga"
         }
       },
       "hero": {
         "src": "assets/images/projects/gkk/hero.webp",
         "alt": {
-          "en": "City library Krapina window graphics and store front design",
-          "hr": "Gradska knjižnica Krapina dizajn izloga"
+          "en": "City library Krapina window graphics and store front design hero image",
+          "hr": "Gradska knjižnica Krapina dizajn izloga glavna slika"
         }
       },
       "social": "assets/images/projects/gkk/social.webp",
@@ -1237,22 +1237,22 @@
       "hr": "Dizajn reklamne folije za vozilo prilagođen zahtjevima klijenta, pretvarajući njihove ideje u sveobuhvatan dizajn."
     },
     "solution": {
-      "en": "A dynamic and friendly yet clear design. ",
+      "en": "A dynamic and friendly yet clear design.",
       "hr": "Dinamičan i prijateljski, a opet jasan dizajn."
     },
     "images": {
       "thumbnail": {
         "src": "assets/images/projects/drvomont-kombi/thumbnail.webp",
         "alt": {
-          "en": "Placeholder for a UI design project",
-          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+          "en": "Drvomont Van Liveries thumbnail",
+          "hr": "Drvomont Dizajn folije vozila thumbnail"
         }
       },
       "hero": {
         "src": "assets/images/projects/drvomont-kombi/hero.webp",
         "alt": {
-          "en": "Placeholder for a UI design project",
-          "hr": "Rezervirano mjesto za projekt dizajna sučelja"
+          "en": "Drvomont Van Liveries hero image",
+          "hr": "Drvomont Dizajn folije vozila glavna slika"
         }
       },
       "social": "assets/images/placeholders/ui.svg",
