@@ -432,7 +432,6 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   overflow: hidden;
   border-radius: var(--radius-md);
   background: var(--surface);
-  position: relative;
 }
 
 .work-card img {
@@ -462,44 +461,9 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
   font-size: .88rem;
 }
 .work-card-arrow {
-  position: absolute;
-  z-index: 2;
-  right: 14px;
-  bottom: 14px;
-
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 999px;
-
-  background: rgba(255, 255, 255, 0.9);
-  color: #111;
-
-  font-size: 0.95rem;
-  line-height: 1;
-
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-
-  transition:
-    transform var(--transition-fast),
-    background-color var(--transition-fast),
-    border-color var(--transition-fast),
-    color var(--transition-fast);
+  transition: transform var(--transition-fast);
 }
-
-.work-card:hover .work-card-arrow {
-  transform: translate(2px, -2px);
-  background: var(--card-accent, #111);
-  border-color: var(--card-accent, #111);
-  color: white;
-}
+.work-card:hover .work-card-arrow { transform: translate(4px, -4px); }
 
 .section-contrast { background: var(--surface); }
 
@@ -910,6 +874,12 @@ html:not([data-theme="dark"]) .theme-icon-sun { display: none; }
 .small-text-link.is-external,
 .work-card-actions .small-text-link:hover {
   color: var(--card-accent, var(--text));
+}
+.work-card-arrow {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
 }
 .about-layout {
   display: grid;
