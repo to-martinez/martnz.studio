@@ -362,6 +362,10 @@ function createWorkCard(project) {
           loading="lazy"
           decoding="async"
         >
+
+        <span class="work-card-arrow" aria-hidden="true">
+          ↗
+        </span>
       </div>
     </a>
 
@@ -400,14 +404,6 @@ function createWorkCard(project) {
           }
         </div>
       </div>
-
-      <a
-        class="work-card-arrow"
-        href="${caseStudyUrl}"
-        aria-label="${t("card.view")}"
-      >
-        <span aria-hidden="true">↗</span>
-      </a>
     </div>
   `;
 
